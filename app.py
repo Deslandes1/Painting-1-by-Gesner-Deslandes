@@ -19,7 +19,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Art Gallery",
             "subtitle": "'Soccer Boys' – Original AI‑assisted painting by Gesner Deslandes",
             "artwork_title": "⚽ “Soccer Boys” – Two Boys Playing with a Sock Ball in Camp City, Under the Rain",
-            "description": "Two bare‑chested Haitian boys, wearing only short pants, kick a single ball made of several rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. One boy is on the left, the other on the right. Both boys have complete, realistic bodies: two arms, two hands, two legs, two feet. The boy on the right has a normal left arm. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
+            "description": "Two bare‑chested Haitian boys, wearing only short pants, play soccer in a muddy camp city under heavy rain. One round black ball made of several rolled‑up socks sits at the feet of the boy on the right. The boy on the left is running toward him. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles, their laughter echoing through the tarps and corrugated metal homes behind them. The boy on the right has a completely realistic body: two arms, two hands with five fingers, two legs, two feet with toes, and a normal left arm. His face shows concentration. The boy on the left is also fully proportioned. Despite the poverty and rain, their joy is unstoppable. This painting captures creativity, resilience, and pure love for soccer.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -43,7 +43,7 @@ def get_translations(lang):
             "gallery_title": "Galerie d'art GlobalInternet.py",
             "subtitle": "« Soccer Boys » – Peinture originale assistée par IA par Gesner Deslandes",
             "artwork_title": "⚽ « Soccer Boys » – Deux garçons jouant avec un ballon en chaussettes sous la pluie, camp ville",
-            "description": "Deux garçons torse nu, portant seulement des shorts, frappent un seul ballon fait de plusieurs chaussettes noires roulées au milieu d'une ville de campement boueuse. La pluie tombe, trempant le sol. Ils ont créé leur propre petit terrain de football avec deux buts de fortune – fabriqués à partir de courts bâtons ou de bois de récupération. Les pieds des garçons éclaboussent les flaques en poursuivant le ballon‑chaussette, leurs rires résonnant à travers les bâches et les tôles ondulées derrière eux. Un garçon est à gauche, l'autre à droite. Les deux garçons ont des corps complets et réalistes : deux bras, deux mains, deux jambes, deux pieds. Le garçon de droite a un bras gauche normal. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football qui fleurissent même dans les conditions les plus dures.",
+            "description": "Deux garçons torse nu, portant seulement des shorts, jouent au football dans une ville de campement boueuse sous une forte pluie. Un ballon rond noir fait de plusieurs chaussettes roulées repose aux pieds du garçon de droite. Le garçon de gauche court vers lui. Ils ont créé leur propre petit terrain avec deux buts de fortune – faits de bâtons courts ou de bois de récupération. Les pieds des garçons éclaboussent les flaques, leurs rires résonnent à travers les bâches et tôles ondulées derrière eux. Le garçon de droite a un corps complètement réaliste : deux bras, deux mains avec cinq doigts, deux jambes, deux pieds avec orteils, et un bras gauche normal. Son visage montre de la concentration. Le garçon de gauche est aussi bien proportionné. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football.",
             "artist": "Artiste : Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -67,7 +67,7 @@ def get_translations(lang):
             "gallery_title": "Galería de arte GlobalInternet.py",
             "subtitle": "« Soccer Boys » – Pintura original asistida por IA por Gesner Deslandes",
             "artwork_title": "⚽ “Soccer Boys” – Dos niños jugando con un balón de calcetines bajo la lluvia, ciudad de campamento",
-            "description": "Dos niños desnudos de la cintura para arriba, con solo pantalones cortos, patean un solo balón hecho de varios calcetines negros enrollados en medio de una ciudad de campamento llena de barro. La lluvia cae, empapando el suelo. Han creado su propio pequeño campo de fútbol con dos porterías improvisadas – hechas de palos cortos o madera reciclada. Los pies de los niños salpican charcos mientras persiguen el balón de calcetín, sus risas resuenan entre las lonas y las chapas de metal corrugado detrás de ellos. Un niño está a la izquierda, el otro a la derecha. Ambos niños tienen cuerpos completos y realistas: dos brazos, dos manos, dos piernas, dos pies. El niño de la derecha tiene un brazo izquierdo normal. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura la creatividad, la resiliencia y el puro amor por el fútbol que florece incluso en las condiciones más difíciles.",
+            "description": "Dos niños desnudos de cintura para arriba, con pantalones cortos, juegan al fútbol en una ciudad de campamento llena de barro bajo una fuerte lluvia. Un balón redondo negro hecho de varios calcetines enrollados está a los pies del niño de la derecha. El niño de la izquierda corre hacia él. Han creado su propio pequeño campo con dos porterías improvisadas de palos o madera reciclada. Los pies de los niños salpican charcos, sus risas resuenan entre las lonas y chapas de metal corrugado detrás de ellos. El niño de la derecha tiene un cuerpo completamente realista: dos brazos, dos manos con cinco dedos, dos piernas, dos pies con dedos, y un brazo izquierdo normal. Su rostro muestra concentración. El niño de la izquierda también está bien proporcionado. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura creatividad, resiliencia y amor puro por el fútbol.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -91,7 +91,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Galeri D'Art",
             "subtitle": "'Soccer Boys' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
             "artwork_title": "⚽ “Soccer Boys” – De ti gason ap jwe foutbòl ak yon boul chosèt anba lapli, nan kan vil",
-            "description": "De ti gason san chemiz, ki mete sèlman bout pantalon, ap choute yon sèl boul ki fèt ak plizyè chosèt nwa woule nan mitan yon vil kan labou. Lapli ap tonbe, tranpe tè a. Yo kreye ti teren foutbòl pa yo ak de biyo pwovizwa – chak fèt ak ti branch bwa oswa bwa resikle. Pye ti gason yo ap vole nan flak dlo pandan y ap kouri dèyè boul chosèt la, ri yo ap fè eko nan twal ak tòl dèyè yo. Yon gason sou bò gòch, lòt la sou bò dwat. Tou de gen kò konplè ak reyalis: de bra, de men, de janm, de pye. Gason ki sou bò dwat la gen bra gòch li nòmal. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl ki florí menm nan kondisyon ki pi rèd yo.",
+            "description": "De ti gason san chemiz, ki mete sèlman bout pantalon, ap jwe foutbòl nan yon vil kan labou anba gwo lapli. Yon boul wonn nwa ki fèt ak plizyè chosèt woule chita sou pye ti gason ki sou bò dwat la. Ti gason sou bò gòch la ap kouri al bò kote l. Yo kreye ti teren pa yo ak de biyo pwovizwa fèt ak ti branch bwa. Pye yo ap vole nan flak dlo, ri yo ap fè eko nan twal ak tòl dèyè yo. Ti gason sou bò dwat la gen yon kò totalman reyalis: de bra, de men ak senk dwèt, de janm, de pye ak zòtèy, ak yon bra gòch nòmal. Figi l montre konsantrasyon. Ti gason sou bò gòch la byen pwopòsyonè tou. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -147,16 +147,16 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- ULTRA‑SPECIFIC PROMPT ----------
+# ---------- ULTRA‑SPECIFIC PROMPT (ONE BALL AT RIGHT BOY'S FEET, REALISTIC BODY) ----------
 prompt = (
     "Oil painting, fine art, realistic style. Two Haitian boys, age 8-12, bare-chested, wearing only short ripped pants, "
-    "playing soccer in a muddy camp city under heavy rain. The scene shows exactly two boys: one on the left side of the image, "
-    "the other on the right side. There is only one ball. The ball is NOT a standard soccer ball. It is a lumpy ball made of several rolled-up black socks. "
-    "Both boys have completely realistic, well-proportioned bodies: each has two arms, two hands with five fingers, two legs, two feet with toes. "
-    "The boy on the right has a normal left arm (attached, fully formed, with hand and fingers). No missing limbs, no distorted anatomy. "
-    "Their faces are clearly visible with natural expressions of joy and concentration. "
-    "Two small makeshift goals made of sticks and scrap wood. Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, "
-    "warm earthy colors, dramatic lighting. High detail, professional gallery quality, photorealistic human figures."
+    "playing soccer in a muddy camp city under heavy rain. The scene shows exactly two boys: one on the left, one on the right. "
+    "There is only one ball. The ball is a round black ball made of several rolled-up black socks. The ball is positioned at the feet of the boy on the right. "
+    "The boy on the right is standing with the ball at his feet, about to kick it. He has a completely realistic, well-proportioned human body: "
+    "two arms, two hands with five fingers, two legs, two feet with toes, a normal left arm (attached, fully formed, with hand and fingers). "
+    "His face shows concentration, realistic skin texture, and natural expression. The boy on the left is running toward the ball; he also has a realistic body with all limbs. "
+    "Two small makeshift goals made of sticks and scrap wood visible. Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, "
+    "warm earthy colors, dramatic lighting. High detail, professional gallery quality, photorealistic human figures. No distorted anatomy, no missing fingers, no extra limbs."
 )
 
 def generate_painting(prompt):
