@@ -62,7 +62,7 @@ def get_translations(lang):
             "history_title": "📚 Historique des peintures",
             "download_history_btn": "💾 Télécharger",
             "clear_history_btn": "🗑️ Effacer l'historique",
-            "no_history": "Aucune peinture sauvegardée. Générez-en pour les voir ici."
+            "no_history": "Aucune peinture sauvegardée. Génerez-en pour les voir ici."
         },
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
@@ -156,7 +156,7 @@ In the background stands a large multi‑story concrete school building. On the 
 
 In the foreground, at the main entrance yard, a pregnant Black Haitian woman lies on her back on dry concrete ground. Her face is completely normal, human, with natural features: two eyes, a nose, a mouth, expressing pain and effort. Her head, shoulders, chest, and arms are normally formed. She has one right arm and one left arm – both are normal, complete, with hands and five fingers each. Her large, round, heavy pregnant belly is very prominent. Her dress is pulled up above her belly. Her legs are normal human legs, proportionate to her body, bent at the knees and spread open for delivery – not too big, not too small.
 
-A Black Haitian woman kneels on the ground on the pregnant woman's right side. She wears a colorful dress. She is holding the pregnant woman's hands, helping her breathe and push. A Black Haitian man kneels on the left side, wearing a t‑shirt and blue jeans. Both helpers have normal human bodies, complete arms and hands.
+A Black Haitian woman penetrates the ground on the pregnant woman's right side. She wears a colorful dress. She is holding the pregnant woman's hands, helping her breathe and push. A Black Haitian man kneels on the left side, wearing a t‑shirt and blue jeans. Both helpers have normal human bodies, complete arms and hands.
 
 Other Black Haitian people (men and women) stand in the background near the building, watching. Some men wear shirts with black jeans; others wear t‑shirts with blue jeans. The women in the background wear normal dresses of various colors.
 
@@ -184,12 +184,14 @@ if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
 
 if "painting_img" not in st.session_state:
-    # First priority: Look for your specific uploaded image file locally
-    local_img_path = "image_45f4bf.jpg"
+    # Strict directory mapping: explicitly targets image file relative to the script path
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    local_img_path = os.path.join(base_dir, "image_45f4bf.jpg")
+    
     if os.path.exists(local_img_path):
         st.session_state.painting_img = Image.open(local_img_path)
     else:
-        # Fallback to generating via code if the image file isn't found in your directory
+        # Fallback generator if file name was mismatched or omitted from the branch
         st.session_state.painting_img = generate_painting(prompt)
 
 # ---------- LANGUAGE SELECTION ----------
