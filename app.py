@@ -2,7 +2,6 @@ import streamlit as st
 import requests
 from PIL import Image
 from io import BytesIO
-import base64
 
 # ---------- PAGE CONFIG ----------
 st.set_page_config(
@@ -12,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ---------- CUSTOM CSS FOR GALLERY STYLE ----------
+# ---------- CUSTOM CSS FOR GALLERY STYLE (with stronger, darker text) ----------
 st.markdown(
     """
     <style>
@@ -39,9 +38,8 @@ st.markdown(
         max-width: 100%;
         border-radius: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        cursor: pointer;
     }
-    /* Description card */
+    /* Description card – STRONG, DARK TEXT */
     .description-card {
         background: #fffef7;
         border-radius: 30px;
@@ -49,7 +47,8 @@ st.markdown(
         margin-top: 2rem;
         border-left: 10px solid #c0392b;
         font-family: 'Georgia', serif;
-        color: #2c2c2c;
+        color: #000000 !important;
+        font-weight: 600;
     }
     .artwork-title {
         font-size: 2rem;
@@ -62,20 +61,24 @@ st.markdown(
         font-size: 1.1rem;
         line-height: 1.6;
         text-align: justify;
+        color: #000000 !important;
+        font-weight: 600;
     }
     .signature {
         margin-top: 2rem;
         text-align: right;
         font-family: 'Brush Script MT', cursive;
         font-size: 1.5rem;
-        color: #2c3e50;
+        color: #000000 !important;
+        font-weight: bold;
         border-top: 1px solid #ccc;
         padding-top: 1rem;
     }
     .contact-info {
         font-family: monospace;
         font-size: 0.9rem;
-        color: #555;
+        color: #000000 !important;
+        font-weight: 600;
         text-align: center;
         margin-top: 1rem;
     }
@@ -112,7 +115,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- PROMPT FOR AI PAINTING (detailed description) ----------
+# ---------- PROMPT FOR AI PAINTING ----------
 prompt = (
     "A five-year-old Haitian girl with dark skin, curly black hair, sitting on a torn, faded rug on a slightly dirty floor. "
     "She is eating a ripe mango, juice dripping from her mouth, staining her torn, colorful little dress. "
@@ -121,9 +124,8 @@ prompt = (
     "emotional, professional gallery quality."
 )
 
-# ---------- FUNCTION TO GENERATE IMAGE FROM POLLINATIONS.AI (free, no key) ----------
+# ---------- FUNCTION TO GENERATE IMAGE ----------
 def generate_painting(prompt):
-    # Pollinations.ai endpoint – returns a generated image directly
     url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true"
     response = requests.get(url, timeout=60)
     if response.status_code == 200:
@@ -131,7 +133,7 @@ def generate_painting(prompt):
     else:
         return None
 
-# ---------- SESSION STATE TO REMEMBER LAST IMAGE ----------
+# ---------- SESSION STATE ----------
 if "painting_img" not in st.session_state:
     with st.spinner("🎨 Creating your painting... Please wait (may take 20-30 seconds)."):
         st.session_state.painting_img = generate_painting(prompt)
@@ -158,7 +160,7 @@ with col2:
             st.session_state.painting_img = generate_painting(prompt)
             st.rerun()
 
-# ---------- ARTWORK DESCRIPTION ----------
+# ---------- ARTWORK DESCRIPTION (text now appears much darker and stronger) ----------
 st.markdown('<div class="description-card">', unsafe_allow_html=True)
 st.markdown('<div class="artwork-title">🍋 “Mango Girl” – Five Years Old, Camp City, Port‑au‑Prince</div>', unsafe_allow_html=True)
 st.markdown(
@@ -174,7 +176,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Artist signature and contact
+# Artist signature and contact – now strong black text
 st.markdown(
     f"""
     <div class="signature">
