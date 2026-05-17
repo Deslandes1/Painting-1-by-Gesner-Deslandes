@@ -120,6 +120,23 @@ st.markdown(
         border: 1px solid #d4a373;
         text-align: center;
     }
+    /* Image caption (figcaption) – force white with shadow */
+    .stImage figcaption {
+        color: #ffffff !important;
+        font-weight: bold !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+        background: rgba(0,0,0,0.4) !important;
+        display: inline-block !important;
+        padding: 0.2rem 1rem !important;
+        border-radius: 30px !important;
+        margin-top: 0.5rem !important;
+    }
+    /* Subtitle (under title) */
+    .subtitle-white {
+        color: #ffffff !important;
+        font-weight: 500;
+        text-align: center;
+    }
     /* Description card – dark background, strong white text */
     .description-card {
         background: rgba(20, 20, 30, 0.95);
@@ -207,6 +224,11 @@ st.markdown(
         .print-only {
             display: block !important;
         }
+        .stImage figcaption {
+            color: black !important;
+            text-shadow: none !important;
+            background: none !important;
+        }
     }
     </style>
     """,
@@ -254,7 +276,7 @@ t = get_translations(lang_map[lang_choice])
 # ---------- MAIN UI ----------
 st.markdown('<div class="gallery-container">', unsafe_allow_html=True)
 st.markdown(f"<h1 style='text-align:center; color:#ffd966;'>{t['gallery_title']}</h1>", unsafe_allow_html=True)
-st.markdown(f"<p style='text-align:center; color:#ddd;'>{t['subtitle']}</p>", unsafe_allow_html=True)
+st.markdown(f"<p class='subtitle-white'>{t['subtitle']}</p>", unsafe_allow_html=True)
 
 # Display painting
 col1, col2, col3 = st.columns([1, 2, 1])
