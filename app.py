@@ -1,6 +1,7 @@
 import streamlit as st
+import requests
 from PIL import Image
-import io
+from io import BytesIO
 import base64
 
 # ---------- PAGE CONFIG ----------
@@ -82,8 +83,12 @@ st.markdown(
         text-align: center;
         margin: 2rem 0;
     }
+    .regenerate-btn {
+        text-align: center;
+        margin-top: 1rem;
+    }
     @media print {
-        .stApp, .print-button, header, footer, [data-testid="stToolbar"] {
+        .stApp, .print-button, .regenerate-btn, header, footer, [data-testid="stToolbar"] {
             display: none !important;
         }
         .gallery-container {
@@ -107,36 +112,51 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- APP TITLE ----------
+# ---------- PROMPT FOR AI PAINTING (detailed description) ----------
+prompt = (
+    "A five-year-old Haitian girl with dark skin, curly black hair, sitting on a torn, faded rug on a slightly dirty floor. "
+    "She is eating a ripe mango, juice dripping from her mouth, staining her torn, colorful little dress. "
+    "Behind her, a camp city with multiple tarps and makeshift homes made of corrugated metal and wood, other families visible. "
+    "The setting is Port-au-Prince, Haiti, under a bright sky. Realistic oil painting style, fine art, detailed, warm colors, "
+    "emotional, professional gallery quality."
+)
+
+# ---------- FUNCTION TO GENERATE IMAGE FROM POLLINATIONS.AI (free, no key) ----------
+def generate_painting(prompt):
+    # Pollinations.ai endpoint – returns a generated image directly
+    url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true"
+    response = requests.get(url, timeout=60)
+    if response.status_code == 200:
+        return Image.open(BytesIO(response.content))
+    else:
+        return None
+
+# ---------- SESSION STATE TO REMEMBER LAST IMAGE ----------
+if "painting_img" not in st.session_state:
+    with st.spinner("🎨 Creating your painting... Please wait (may take 20-30 seconds)."):
+        st.session_state.painting_img = generate_painting(prompt)
+
+# ---------- UI ----------
 st.markdown('<div class="gallery-container">', unsafe_allow_html=True)
 st.markdown("<h1 style='text-align:center; color:#ffd966;'>🎨 GlobalInternet.py Art Gallery</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align:center; color:#ddd;'>Where code meets creativity – a digital exhibition space</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; color:#ddd;'>'Mango Girl' – Original AI‑assisted painting by Gesner Deslandes</p>", unsafe_allow_html=True)
 
-# ---------- PAINTING UPLOAD (or use placeholder) ----------
-st.markdown("### 🖼️ Upload your painting (or use the demo description)")
-uploaded_file = st.file_uploader("Choose an image file (JPG, PNG)", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
-
-# If no image uploaded, show a placeholder with the description text instead of an image?
-# Better to provide a default generated image? But we can display a gray box with text.
-# I'll create a placeholder image with PIL that shows a descriptive text.
-def create_placeholder_image():
-    img = Image.new('RGB', (800, 600), color='#d4a373')
-    # We can't draw text easily with PIL without font, so we'll use st.image with caption.
-    return img
-
-if uploaded_file is not None:
-    image = Image.open(uploaded_file)
-else:
-    # Use a placeholder image (brown background with text description)
-    image = create_placeholder_image()
-    st.info("No image uploaded. A placeholder is shown. Please upload your painting to replace it.")
-
-# ---------- DISPLAY PAINTING ----------
+# Display painting
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown('<div class="painting-frame">', unsafe_allow_html=True)
-    st.image(image, use_container_width=True, caption="'Mango Girl' – Original Painting", output_format="JPEG")
+    if st.session_state.painting_img:
+        st.image(st.session_state.painting_img, use_container_width=True, caption="'Mango Girl' – Original Painting")
+    else:
+        st.error("Failed to generate painting. Please check your internet connection and try again.")
     st.markdown('</div>', unsafe_allow_html=True)
+
+# Regenerate button
+with col2:
+    if st.button("🎨 Regenerate Painting (new version)", use_container_width=True, key="regenerate"):
+        with st.spinner("Creating a new version..."):
+            st.session_state.painting_img = generate_painting(prompt)
+            st.rerun()
 
 # ---------- ARTWORK DESCRIPTION ----------
 st.markdown('<div class="description-card">', unsafe_allow_html=True)
@@ -170,7 +190,7 @@ st.markdown(
 )
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ---------- PRINT BUTTON (prints the entire page content) ----------
+# ---------- PRINT BUTTON ----------
 st.markdown('<div class="print-button">', unsafe_allow_html=True)
 if st.button("🖨️ Print this artwork for exhibition", use_container_width=True):
     st.markdown(
@@ -184,5 +204,5 @@ if st.button("🖨️ Print this artwork for exhibition", use_container_width=Tr
 st.markdown('</div>', unsafe_allow_html=True)
 
 # ---------- FOOTER ----------
-st.markdown('<p style="text-align:center; color:#aaa; margin-top:2rem;">© 2026 GlobalInternet.py – Digital art exhibition software</p>', unsafe_allow_html=True)
+st.markdown('<p style="text-align:center; color:#aaa; margin-top:2rem;">© 2026 GlobalInternet.py – AI‑enhanced digital art exhibition software</p>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
