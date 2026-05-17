@@ -68,7 +68,7 @@ def get_translations(lang):
             "gallery_title": "Galería de arte GlobalInternet.py",
             "subtitle": "« Nacimiento en el Liceo » – Pintura original asistida por IA por Gesner Deslandes",
             "artwork_title": "👶 “Nacimiento en el Liceo” – Mujer embarazada dando a luz en una escuela de refugiados, Puerto Príncipe",
-            "description": "Frente al Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada negra haitiana yace en el suelo de cemento en la entrada principal. Su vestido está levantado, sus piernas están dobladas y naturalmente abiertas, y su gran vientre redondo es claramente visible. Está en trabajo de parto activo. Un hombre a su izquierda (con camiseta y jeans azules) se arrodilla a su lado. Una mujer a su derecha (con vestido colorido) se arrodilla en el suelo, tomando las manos de la mujer embarazada, ayudándola a respirar y pujar. Otros haitianos negros están en el fondo cerca del edificio, observando. Algunos hombres usan camisas con jeans negros; otros usan camisetas con jeans azules. Las mujeres en el fondo usan vestidos normales de varios colores. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol. El edificio tiene el nombre 'Lycee Du Cencenquantenaire' claramente pintado en la pared superior. La escena es realista, emocionalmente poderosa, con luz cálida que proyecta sombras. Sin lluvia, solo un día soleado.",
+            "description": "Frente al Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada negra haitiana yace en el suelo de cemento en la entrada principal. Su vestido está levantado, sus piernas están dobladas y naturalmente abiertas, y su gran vientre redondo es claramente visible. Está en trabajo de parto activo. Un hombre a su izquierda (con camiseta y jeans azules) se arrodilla a su lado. Una mujer a su derecha (con vestido colorido) se arrodilla en el suelo, tomando las manos de la mujer embarazada, ayudándola a respirar y pujar. Otros haitianos negros están en el fondo cerca del edificio, observando. Algunos hombres usan camisas con jeans negros; otros usan camisetas con jeans azules. Las mujeres en el fondo usan vestidos normales de varios colores. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol. El edificio tiene el nombre 'Lycee Du Cencenquantenaire' claramente pintado en la pared superior. La escena es realista, emocionalmente poderosa, con luz cálida que proyecta sombras. Sin lluvia, solo un día pasado por sol.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -184,14 +184,14 @@ if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
 
 if "painting_img" not in st.session_state:
-    # Strict directory mapping: explicitly targets image file relative to the script path
+    # Explicit directory targeting for your specific file path configuration
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    local_img_path = os.path.join(base_dir, "image_45f4bf.jpg")
+    local_img_path = os.path.join(base_dir, "image_45ffc9.jpg")
     
     if os.path.exists(local_img_path):
         st.session_state.painting_img = Image.open(local_img_path)
     else:
-        # Fallback generator if file name was mismatched or omitted from the branch
+        # Fallback to generation script if filename is altered or missing inside directory
         st.session_state.painting_img = generate_painting(prompt)
 
 # ---------- LANGUAGE SELECTION ----------
