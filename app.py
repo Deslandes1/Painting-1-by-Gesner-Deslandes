@@ -147,18 +147,17 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- ULTRA-SPECIFIC PROMPT (realistic pregnant woman, helper kneeling, school name) ----------
+# ---------- EXTREMELY CLEAR PROMPT (no ambiguity, realistic human figures) ----------
 prompt = (
-    "Oil painting, fine art, realistic style, photorealistic. The scene is set in Port‑au‑Prince, Haiti, on a bright sunny day (no rain). "
-    "In the background stands a large multi‑story concrete school building. On the top wall of the building, the name 'Lycee Du Cencenquantenaire' is clearly painted in large letters. "
-    "The building has several balconies on each floor. On every balcony, displaced families have hung clothes to dry: shirts, t‑shirts, pants, dresses, and sleeping rugs. "
-    "In the foreground, at the main entrance yard, a pregnant Black Haitian woman lies on the concrete ground. Her dress is pulled up above her belly. "
-    "Her large, round, heavy pregnant belly is very prominent. Her legs are open, and she is in active labor, her face showing pain and effort. "
-    "A Black Haitian man on her left, wearing a t‑shirt and blue jeans, kneels beside her. A Black Haitian woman on her right, wearing a colorful dress, kneels on the ground and holds the pregnant woman's hands, helping her breathe and push. "
-    "Other Black Haitians stand in the background near the building, watching. Among those background figures, some men wear shirts with black jeans, others wear t‑shirts with blue jeans. "
-    "The women in the background wear normal dresses of various colors. All people have realistic Black skin tones, natural faces, complete arms and hands with five fingers. "
-    "The ground is concrete, warm sunlight casts soft shadows. The mood is tense but hopeful, capturing the harsh reality of life in a displaced camp. "
-    "High detail, professional gallery quality, emotionally powerful."
+    "Realistic oil painting. A pregnant Black Haitian woman lying on her back on concrete ground. "
+    "Her head, shoulders, arms, and chest are normally formed like a real human. Her large round pregnant belly is very visible. "
+    "Her dress is pulled up, her legs are bent and open. Her face shows pain and effort. "
+    "A Black woman kneeling on the ground beside her, holding the pregnant woman's hands, helping her give birth. "
+    "The kneeling woman wears a colorful dress. A Black man kneeling on the other side, wearing a t-shirt and blue jeans. "
+    "In the background: a large concrete school building with balconies. Clothes hanging on every balcony. "
+    "On the top wall of the building the name 'Lycee Du Cencenquantenaire' is painted. "
+    "Other Black people (men and women) stand watching. The ground is dry concrete, bright sun, no rain. "
+    "The scene is easy to understand: a woman giving birth with two helpers. All bodies are normal, no distortions."
 )
 
 def generate_painting(prompt):
