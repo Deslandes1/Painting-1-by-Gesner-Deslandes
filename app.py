@@ -146,11 +146,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- IMAGE URL (REPLACE WITH YOUR RAW GITHUB LINK) ----------
-# !!! IMPORTANT !!!
-# Replace the URL below with the direct raw link to your mercenary painting.
-# Example: https://raw.githubusercontent.com/YourUserName/YourRepo/main/mercenaries.png
-image_url = "YOUR_RAW_IMAGE_URL_HERE"
+# ---------- CORRECT RAW IMAGE URL ----------
+# 使用正确的原始图片链接，替换了之前的错误链接
+image_url = "https://raw.githubusercontent.com/Deslandes1/Painting-1-by-Gesner-Deslandes/main/Gemini_Generated_Image_fwpr4ofwpr4ofwpr.png"
 
 def load_image_from_url(url):
     try:
@@ -217,7 +215,6 @@ with col2:
         st.image(st.session_state.painting_img, use_container_width=True, caption=t['img_caption'])
     else:
         st.error(t['error'])
-        st.info("Make sure you have replaced `image_url` with a valid raw image link from GitHub.")
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
