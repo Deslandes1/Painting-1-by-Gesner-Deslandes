@@ -147,19 +147,19 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- THE FINAL, DETAILED PROMPT (copy exactly) ----------
+# ---------- CORRECTED PROMPT (no double arm, proper leg proportions) ----------
 prompt = """
 Realistic oil painting, fine art, photorealistic style. The scene is set in Port‑au‑Prince, Haiti, on a bright sunny day (no rain).
 
 In the background stands a large multi‑story concrete school building. On the top wall of the building, the name "Lycee Du Cencenquantenaire" is clearly painted in large, visible French letters. The building has several balconies on each floor. On every balcony, displaced families have hung clothes to dry: shirts, t‑shirts, pants, dresses, and sleeping rugs.
 
-In the foreground, at the main entrance yard, a pregnant Black Haitian woman lies on her back on dry concrete ground. Her face is completely normal, human, with natural features: two eyes, a nose, a mouth, and she expresses pain and effort. Her head, shoulders, chest, and arms are normally formed. Her right arm is fully visible, complete, with a hand and five fingers – it looks like a real human arm. Her large, round, heavy pregnant belly is very prominent. Her dress is pulled up above her belly. Her legs are normal human legs, bent at the knees and spread wide open for delivery – they look like real legs, not distorted.
+In the foreground, at the main entrance yard, a pregnant Black Haitian woman lies on her back on dry concrete ground. Her face is completely normal, human, with natural features: two eyes, a nose, a mouth, expressing pain and effort. Her head, shoulders, chest, and arms are normally formed. She has one right arm and one left arm – both are normal, complete, with hands and five fingers each. Her large, round, heavy pregnant belly is very prominent. Her dress is pulled up above her belly. Her legs are normal human legs, proportionate to her body, bent at the knees and spread open for delivery – not too big, not too small.
 
 A Black Haitian woman kneels on the ground on the pregnant woman's right side. She wears a colorful dress. She is holding the pregnant woman's hands, helping her breathe and push. A Black Haitian man kneels on the left side, wearing a t‑shirt and blue jeans. Both helpers have normal human bodies, complete arms and hands.
 
 Other Black Haitian people (men and women) stand in the background near the building, watching. Some men wear shirts with black jeans; others wear t‑shirts with blue jeans. The women in the background wear normal dresses of various colors.
 
-All people have realistic Black skin tones, natural faces, and correctly proportioned bodies. No missing limbs, no distorted fingers, no monster‑like features. The ground is concrete, warm sunlight casts soft shadows. The scene is easy to understand: a woman giving birth with two helpers.
+All people have realistic Black skin tones, natural faces, and correctly proportioned bodies. No missing limbs, no extra limbs, no distorted fingers, no monster‑like features. The ground is concrete, warm sunlight casts soft shadows. The scene is easy to understand: a woman giving birth with two helpers.
 """
 
 def generate_painting(prompt):
