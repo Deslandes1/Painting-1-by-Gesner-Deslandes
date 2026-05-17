@@ -17,7 +17,7 @@ def get_translations(lang):
     texts = {
         "en": {
             "gallery_title": "GlobalInternet.py Art Gallery",
-            "subtitle": "'Birth at the Lyceum' – Original AI‑assisted painting by Gesner Deslandes",
+            "subtitle": "'Birth at the Lyceum' – Original painting by Gesner Deslandes",
             "artwork_title": "👶 “Birth at the Lyceum” – Pregnant Woman Giving Birth at a Refugee School, Port‑au‑Prince",
             "description": "In front of the Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), a school now serving as a refugee shelter, a pregnant Black Haitian woman lies on the concrete ground at the main entrance. Her dress is pulled up, her legs are bent and naturally open, and her large, round belly is clearly visible. She is in active labor. A man on her left (wearing a t‑shirt and blue jeans) kneels beside her. A woman on her right (wearing a colorful dress) kneels on the ground, holding the pregnant woman's hands, helping her breathe and push. Other Black Haitians stand in the background near the building, watching. Some men wear shirts with black jeans; others wear t‑shirts with blue jeans. Women in the background wear normal dresses of various colors. On every balcony of the building, displaced families have hung clothes, shirts, pants, dresses, and sleeping rugs to dry under the bright sun. The building has the name 'Lycee Du Cencenquantenaire' clearly painted on the top wall. The scene is realistic, emotionally powerful, with warm sunlight casting shadows. No rain, only a sunny day.",
             "artist": "Artist: Gesner Deslandes",
@@ -29,8 +29,8 @@ def get_translations(lang):
             "print_btn": "🖨️ Print this artwork for exhibition",
             "download_btn": "💾 Download this painting (PNG)",
             "footer": "© 2026 GlobalInternet.py – AI‑enhanced digital art exhibition software",
-            "loading": "🎨 Creating your painting... Please wait (may take 20-30 seconds).",
-            "error": "Failed to generate painting. Please check your internet connection and try again.",
+            "loading": "🎨 Loading your painting...",
+            "error": "Failed to load painting. Please check your internet connection and try again.",
             "sidebar_title": "🌐 Language",
             "sidebar_instruction": "Select your language",
             "img_caption": "'Birth at the Lyceum' – Original Painting",
@@ -41,7 +41,7 @@ def get_translations(lang):
         },
         "fr": {
             "gallery_title": "Galerie d'art GlobalInternet.py",
-            "subtitle": "« Naissance au Lycée » – Peinture originale assistée par IA par Gesner Deslandes",
+            "subtitle": "« Naissance au Lycée » – Peinture originale par Gesner Deslandes",
             "artwork_title": "👶 « Naissance au Lycée » – Femme enceinte accouchant dans une école de réfugiés, Port‑au‑Prince",
             "description": "Devant le Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), une école devenue refuge, une femme enceinte noire haïtienne est allongée sur le sol en béton à l'entrée principale. Sa robe est relevée, ses jambes sont pliées et naturellement écartées, et son gros ventre rond est clairement visible. Elle est en plein travail. Un homme à sa gauche (portant un t‑shirt et un jean bleu) s'agenouille à côté d'elle. Une femme à sa droite (portant une robe colorée) s'agenouille sur le sol, tenant les mains de la femme enceinte, l'aidant à respirer et à pousser. D'autres Haïtiens noirs se tiennent en arrière-plan près du bâtiment, regardant. Certains hommes portent des chemises avec jeans noirs, d'autres des t‑shirts avec jeans bleus. Les femmes en arrière-plan portent des robes normales de différentes couleurs. À chaque balcon du bâtiment, des familles déplacées ont suspendu vêtements, chemises, pantalons, robes et tapis de sol pour les faire sécher au soleil. Le bâtiment porte le nom 'Lycee Du Cencenquantenaire' clairement peint sur le mur du haut. La scène est réaliste, puissante, avec une lumière chaude projetant des ombres. Pas de pluie, seulement un jour ensoleillé.",
             "artist": "Artiste : Gesner Deslandes",
@@ -53,19 +53,19 @@ def get_translations(lang):
             "print_btn": "🖨️ Imprimer cette œuvre pour exposition",
             "download_btn": "💾 Télécharger cette peinture (PNG)",
             "footer": "© 2026 GlobalInternet.py – Logiciel d'exposition d'art numérique assisté par IA",
-            "loading": "🎨 Création de votre peinture... Veuillez patienter (20-30 secondes).",
-            "error": "Échec de la génération. Vérifiez votre connexion internet et réessayez.",
+            "loading": "🎨 Chargement de votre peinture...",
+            "error": "Échec du chargement. Vérifiez votre connexion internet.",
             "sidebar_title": "🌐 Langue",
             "sidebar_instruction": "Choisissez votre langue",
             "img_caption": "« Naissance au Lycée » – Peinture originale",
             "history_title": "📚 Historique des peintures",
             "download_history_btn": "💾 Télécharger",
             "clear_history_btn": "🗑️ Effacer l'historique",
-            "no_history": "Aucune peinture sauvegardée. Génerez-en pour les voir ici."
+            "no_history": "Aucune peinture sauvegardée."
         },
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
-            "subtitle": "« Nacimiento en el Liceo » – Pintura original asistida por IA por Gesner Deslandes",
+            "subtitle": "« Nacimiento en el Liceo » – Pintura original por Gesner Deslandes",
             "artwork_title": "👶 “Nacimiento en el Liceo” – Mujer embarazada dando a luz en una escuela de refugiados, Puerto Príncipe",
             "description": "Frente al Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada negra haitiana yace en el suelo de cemento en la entrada principal. Su vestido está levantado, sus piernas están dobladas y naturalmente abiertas, y su gran vientre redondo es claramente visible. Está en trabajo de parto activo. Un hombre a su izquierda (con camiseta y jeans azules) se arrodilla a su lado. Una mujer a su derecha (con vestido colorido) se arrodilla en el suelo, tomando las manos de la mujer embarazada, ayudándola a respirar y pujar. Otros haitianos negros están en el fondo cerca del edificio, observando. Algunos hombres usan camisas con jeans negros; otros usan camisetas con jeans azules. Las mujeres en el fondo usan vestidos normales de varios colores. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol. El edificio tiene el nombre 'Lycee Du Cencenquantenaire' claramente pintado en la pared superior. La escena es realista, emocionalmente poderosa, con luz cálida que proyecta sombras. Sin lluvia, solo un día soleado.",
             "artist": "Artista: Gesner Deslandes",
@@ -77,21 +77,21 @@ def get_translations(lang):
             "print_btn": "🖨️ Imprimir esta obra para exposición",
             "download_btn": "💾 Descargar esta pintura (PNG)",
             "footer": "© 2026 GlobalInternet.py – Software de exhibición de arte digital mejorado con IA",
-            "loading": "🎨 Creando su pintura... Espere (20-30 segundos).",
-            "error": "Error al generar la pintura. Verifique su conexión a internet e intente de nuevo.",
+            "loading": "🎨 Cargando su pintura...",
+            "error": "Error al cargar. Verifique su conexión a internet.",
             "sidebar_title": "🌐 Idioma",
             "sidebar_instruction": "Seleccione su idioma",
             "img_caption": "« Nacimiento en el Liceo » – Pintura original",
             "history_title": "📚 Historial de pinturas",
             "download_history_btn": "💾 Descargar",
-            "clear_history_btn": "Borrar historial",
-            "no_history": "No hay pinturas guardadas. Genere algunas para verlas aquí."
+            "clear_history_btn": "🗑️ Borrar historial",
+            "no_history": "No hay pinturas guardadas."
         },
         "ht": {
             "gallery_title": "GlobalInternet.py Galeri D'Art",
-            "subtitle": "'Nesans nan Lise a' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
+            "subtitle": "'Nesans nan Lise a' – Tablo orijinal pa Gesner Deslandes",
             "artwork_title": "👶 “Nesans nan Lise a” – Fanm ansent ap akouche devan yon lekòl refijye, Pòtoprens",
-            "description": "Devan Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a se yon abri refijye, yon fanm ansent nwa Ayisyèn kouche sou tè konkrè a devan pòtay prensipal la. Rad li leve, janm li pliye ak natirèlman louvri, ak gwo vant wonn li byen vizib. Li nan travay akouchman. Yon gason sou bò gòch li (ki mete t‑chèz ak pantalon ble) jenou atè bò kote l. Yon fanm sou bò dwat li (ki mete yon rad kolore) jenou atè sou tè a, kenbe men fanm ansent la, ede l respire ak pouse. Lòt moun nwa Ayisyen yo kanpe nan dèyè bò bilding lan, ap gade. Gen gason ki mete chemiz ak pantalon nwa, gen lòt ki mete t‑chèz ak pantalon ble. Fanm nan dèyè yo mete rad nòmal ak koulè diferan. Sou chak galri bilding lan, fanmi deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen non 'Lycee Du Cencenquantenaire' pentire klèman sou miray anlè a. Sèn nan reyalis, fò anmil emosyon, ak limyè cho ki bay lonbraj. Pa gen lapli, sèlman yon jou solèy.",
+            "description": "Devan Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a se yon abri refijye, yon fanm ansent nwa Ayisyèn kouche sou tè konkrè a devan pòtay prensipal la. Rad li leve, janm li pliye ak natirèlman louvri, ak gwo vant wonn li byen vizib. Li nan travay akouchman. Yon gason sou bò gòch li (ki mete t‑chèz ak pantalon ble) jenou atè bò kote l. Yon fanm sou bò dwat li (ki mete yon rad kolore) jenou atè sou tè a, kenbe men fanm ansent la, ede l respire ak pouse. Lòt moun nwa Ayisyen yo kanpe nan dèyè bò bilding lan, ap gade. Gen gason ki mete chemiz ak pantalon nwa, gen lòt ki mete t‑chèz ak pantalon ble. Fanm nan dèyè yo mete rad nòmal ak koulè diferan. Sou chak galri bilding lan, fanmi deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen non 'Lycee Du Cencenquantenaire' pentire klèman sou miray anlè a. Sèn nan reyalis, fò anpil emosyon, ak limyè cho ki bay lonbraj. Pa gen lapli, sèlman yon jou solèy.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -101,15 +101,15 @@ def get_translations(lang):
             "print_btn": "🖨️ Enprime travay sa a pou egzibisyon",
             "download_btn": "💾 Telechaje tablo sa a (PNG)",
             "footer": "© 2026 GlobalInternet.py – Lojisyèl egzibisyon atis dijital avèk IA",
-            "loading": "🎨 Kreyasyon tablo a... Tanpri tann (20-30 segonn).",
-            "error": "Pa t kapab kreye tablo a. Tcheke koneksyon entènèt ou epi eseye ankò.",
+            "loading": "🎨 Ap chaje tablo a...",
+            "error": "Pa t kapab chaje tablo a. Tcheke koneksyon entènèt ou.",
             "sidebar_title": "🌐 Lang",
             "sidebar_instruction": "Chwazi lang ou",
             "img_caption": "'Nesans nan Lise a' – Tablo Orijinal",
             "history_title": "📚 Istorik tablo yo",
             "download_history_btn": "💾 Telechaje",
             "clear_history_btn": "🗑️ Efase istorik",
-            "no_history": "Pa gen tablo ki sove. Kreye kèk pou wè yo isit la."
+            "no_history": "Pa gen tablo ki sove."
         }
     }
     return texts[lang]
@@ -140,20 +140,16 @@ st.markdown(
         .description-card { background: white !important; color: black !important; border: 1px solid #ccc; }
         .description-card * { color: black !important; }
         .signature, .contact-info { color: black !important; }
-        .print-only { display: block !important; }
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# ---------- PROMPT (Fallback Generator) ----------
-prompt = """
-Realistic oil painting, fine art, photorealistic style. The scene is set in Port‑au‑Prince, Haiti, on a bright sunny day (no rain).
-In the background stands a large multi‑story concrete school building with the name "Lycee Du Cencenquantenaire" clearly painted on the top wall.
-"""
+# ---------- FIXED IMAGE URL (RAW GITHUB) ----------
+image_url = "https://raw.githubusercontent.com/Deslandes1/Painting-1-by-Gesner-Deslandes/main/Gemini_Generated_Image_fwpr4ofwpr4ofwpr.png"
 
-def fetch_image_from_url(url):
+def load_image_from_url(url):
     try:
         response = requests.get(url, timeout=30)
         if response.status_code == 200:
@@ -162,30 +158,19 @@ def fetch_image_from_url(url):
         pass
     return None
 
-def generate_painting(prompt):
-    seed = int(datetime.datetime.now().timestamp())
-    url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true&seed={seed}"
-    return fetch_image_from_url(url)
-
 def pil_to_bytes(img, format="PNG"):
     buf = BytesIO()
     img.save(buf, format=format)
     return buf.getvalue()
 
 # ---------- SESSION STATE ----------
+if "painting_img" not in st.session_state:
+    with st.spinner("🎨 Loading your painting..."):
+        st.session_state.painting_img = load_image_from_url(image_url)
+        st.session_state.painting_history = []
+
 if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
-
-if "painting_img" not in st.session_state:
-    # Uses the direct URL routing pointing straight to your repository file via raw content paths
-    github_raw_url = "https://raw.githubusercontent.com/Deslandes1/Painting-1-by-Gesner-Deslandes/main/pregnant%20woman.jpg"
-    
-    loaded_img = fetch_image_from_url(github_raw_url)
-    if loaded_img:
-        st.session_state.painting_img = loaded_img
-    else:
-        # Failsafe generator in case web routing changes or breaks
-        st.session_state.painting_img = generate_painting(prompt)
 
 # ---------- LANGUAGE SELECTION ----------
 st.sidebar.markdown("## 🌐 Language / Langue")
@@ -234,12 +219,12 @@ with col2:
 with col2:
     col_btn1, col_btn2 = st.columns(2)
     with col_btn1:
+        # "Regenerate" now just reloads the same image (or you could re-fetch)
         if st.button(t['regenerate_btn'], use_container_width=True, key="regenerate"):
             if st.session_state.painting_img is not None:
                 st.session_state.painting_history.append(st.session_state.painting_img.copy())
-            
             with st.spinner(t['loading']):
-                st.session_state.painting_img = generate_painting(prompt)
+                st.session_state.painting_img = load_image_from_url(image_url)
                 st.rerun()
     with col_btn2:
         if st.session_state.painting_img is not None:
