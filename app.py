@@ -18,8 +18,8 @@ def get_translations(lang):
         "en": {
             "gallery_title": "GlobalInternet.py Art Gallery",
             "subtitle": "'Soccer Boys' – Original AI‑assisted painting by Gesner Deslandes",
-            "artwork_title": "⚽ “Soccer Boys” – Four Boys Playing with a Sock Ball in Camp City, Under the Rain",
-            "description": "Four bare‑chested Haitian boys, wearing only short pants, kick a ball made of rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
+            "artwork_title": "⚽ “Soccer Boys” – Two Boys Playing with a Sock Ball in Camp City, Under the Rain",
+            "description": "Two bare‑chested Haitian boys, wearing only short pants, kick a ball made of rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. One boy is on the left, the other on the right. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -42,8 +42,8 @@ def get_translations(lang):
         "fr": {
             "gallery_title": "Galerie d'art GlobalInternet.py",
             "subtitle": "« Soccer Boys » – Peinture originale assistée par IA par Gesner Deslandes",
-            "artwork_title": "⚽ « Soccer Boys » – Quatre garçons jouant avec un ballon en chaussettes sous la pluie, camp ville",
-            "description": "Quatre garçons torse nu, portant seulement des shorts, frappent un ballon fait de chaussettes noires roulées au milieu d'une ville de campement boueuse. La pluie tombe, trempant le sol. Ils ont créé leur propre petit terrain de football avec deux buts de fortune – fabriqués à partir de courts bâtons ou de bois de récupération. Les pieds des garçons éclaboussent les flaques en poursuivant le ballon‑chaussette, leurs rires résonnant à travers les bâches et les tôles ondulées derrière eux. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football qui fleurissent même dans les conditions les plus dures.",
+            "artwork_title": "⚽ « Soccer Boys » – Deux garçons jouant avec un ballon en chaussettes sous la pluie, camp ville",
+            "description": "Deux garçons torse nu, portant seulement des shorts, frappent un ballon fait de chaussettes noires roulées au milieu d'une ville de campement boueuse. La pluie tombe, trempant le sol. Ils ont créé leur propre petit terrain de football avec deux buts de fortune – fabriqués à partir de courts bâtons ou de bois de récupération. Les pieds des garçons éclaboussent les flaques en poursuivant le ballon‑chaussette, leurs rires résonnant à travers les bâches et les tôles ondulées derrière eux. Un garçon est à gauche, l'autre à droite. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football qui fleurissent même dans les conditions les plus dures.",
             "artist": "Artiste : Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -66,8 +66,8 @@ def get_translations(lang):
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
             "subtitle": "« Soccer Boys » – Pintura original asistida por IA por Gesner Deslandes",
-            "artwork_title": "⚽ “Soccer Boys” – Cuatro niños jugando con un balón de calcetines bajo la lluvia, ciudad de campamento",
-            "description": "Cuatro niños desnudos de la cintura para arriba, con solo pantalones cortos, patean un balón hecho de calcetines negros enrollados en medio de una ciudad de campamento llena de barro. La lluvia cae, empapando el suelo. Han creado su propio pequeño campo de fútbol con dos porterías improvisadas – hechas de palos cortos o madera reciclada. Los pies de los niños salpican charcos mientras persiguen el balón de calcetín, sus risas resuenan entre las lonas y las chapas de metal corrugado detrás de ellos. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura la creatividad, la resiliencia y el puro amor por el fútbol que florece incluso en las condiciones más difíciles.",
+            "artwork_title": "⚽ “Soccer Boys” – Dos niños jugando con un balón de calcetines bajo la lluvia, ciudad de campamento",
+            "description": "Dos niños desnudos de la cintura para arriba, con solo pantalones cortos, patean un balón hecho de calcetines negros enrollados en medio de una ciudad de campamento llena de barro. La lluvia cae, empapando el suelo. Han creado su propio pequeño campo de fútbol con dos porterías improvisadas – hechas de palos cortos o madera reciclada. Los pies de los niños salpican charcos mientras persiguen el balón de calcetín, sus risas resuenan entre las lonas y las chapas de metal corrugado detrás de ellos. Un niño está a la izquierda, el otro a la derecha. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura la creatividad, la resiliencia y el puro amor por el fútbol que florece incluso en las condiciones más difíciles.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -90,8 +90,8 @@ def get_translations(lang):
         "ht": {
             "gallery_title": "GlobalInternet.py Galeri D'Art",
             "subtitle": "'Soccer Boys' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
-            "artwork_title": "⚽ “Soccer Boys” – Kat ti gason ap jwe foutbòl ak yon boul chosèt anba lapli, nan kan vil",
-            "description": "Kat ti gason san chemiz, ki mete sèlman bout pantalon, ap choute yon boul fèt ak chosèt nwa woule nan mitan yon vil kan labou. Lapli ap tonbe, tranpe tè a. Yo kreye ti teren foutbòl pa yo ak de biyo pwovizwa – chak fèt ak ti branch bwa oswa bwa resikle. Pye ti gason yo ap vole nan flak dlo pandan y ap kouri dèyè boul chosèt la, ri yo ap fè eko nan twal ak tòl dèyè yo. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl ki florí menm nan kondisyon ki pi rèd yo.",
+            "artwork_title": "⚽ “Soccer Boys” – De ti gason ap jwe foutbòl ak yon boul chosèt anba lapli, nan kan vil",
+            "description": "De ti gason san chemiz, ki mete sèlman bout pantalon, ap choute yon boul fèt ak chosèt nwa woule nan mitan yon vil kan labou. Lapli ap tonbe, tranpe tè a. Yo kreye ti teren foutbòl pa yo ak de biyo pwovizwa – chak fèt ak ti branch bwa oswa bwa resikle. Pye ti gason yo ap vole nan flak dlo pandan y ap kouri dèyè boul chosèt la, ri yo ap fè eko nan twal ak tòl dèyè yo. Yon gason sou bò gòch, lòt la sou bò dwat. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl ki florí menm nan kondisyon ki pi rèd yo.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -114,145 +114,46 @@ def get_translations(lang):
     }
     return texts[lang]
 
-# ---------- CUSTOM CSS (same as before) ----------
+# ---------- CSS (unchanged) ----------
 st.markdown(
     """
     <style>
-    .stApp {
-        background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1a 100%);
-    }
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #1e2a3e, #0f1722);
-        border-right: 2px solid #ffb347;
-    }
-    [data-testid="stSidebar"] * {
-        color: #f0f0f0 !important;
-    }
-    .gallery-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-    }
-    .painting-frame {
-        background: #f5e6d3;
-        padding: 1.5rem;
-        border-radius: 40px;
-        box-shadow: 0 30px 40px rgba(0,0,0,0.4);
-        border: 1px solid #d4a373;
-        text-align: center;
-    }
-    .stCaption, .stImage figcaption {
-        color: #ffffff !important;
-        font-weight: bold !important;
-        font-size: 1.1rem !important;
-        text-align: center !important;
-        margin-top: 0.5rem !important;
-    }
-    .description-card {
-        background: rgba(20, 20, 30, 0.95);
-        border-radius: 30px;
-        padding: 1.8rem;
-        margin-top: 2rem;
-        border-left: 10px solid #ffb347;
-        font-family: 'Georgia', serif;
-        color: #ffffff !important;
-        font-weight: 700;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-    .artwork-title {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #ffd966;
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
-    .artwork-detail {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        text-align: justify;
-        color: #ffffff !important;
-        font-weight: 500;
-    }
-    .signature {
-        margin-top: 2rem;
-        text-align: right;
-        font-family: 'Brush Script MT', cursive;
-        font-size: 1.5rem;
-        color: #ffd966 !important;
-        font-weight: bold;
-        border-top: 1px solid #ffb347;
-        padding-top: 1rem;
-    }
-    .contact-info {
-        font-family: monospace;
-        font-size: 0.9rem;
-        color: #ffffff !important;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 1rem;
-    }
-    .print-button, .regenerate-btn, .download-button {
-        text-align: center;
-        margin: 1rem 0;
-    }
-    .stButton button {
-        background-color: #e94560 !important;
-        color: white !important;
-        border-radius: 30px !important;
-        font-weight: bold !important;
-        border: none;
-        padding: 0.5rem 1.5rem;
-    }
-    .stButton button:hover {
-        background-color: #ff6b6b !important;
-        transform: scale(1.02);
-    }
-    .history-item {
-        margin-bottom: 1rem;
-        text-align: center;
-        background: rgba(0,0,0,0.3);
-        padding: 0.5rem;
-        border-radius: 15px;
-    }
+    .stApp { background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1a 100%); }
+    [data-testid="stSidebar"] { background: linear-gradient(180deg, #1e2a3e, #0f1722); border-right: 2px solid #ffb347; }
+    [data-testid="stSidebar"] * { color: #f0f0f0 !important; }
+    .gallery-container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .painting-frame { background: #f5e6d3; padding: 1.5rem; border-radius: 40px; box-shadow: 0 30px 40px rgba(0,0,0,0.4); border: 1px solid #d4a373; text-align: center; }
+    .stCaption, .stImage figcaption { color: #ffffff !important; font-weight: bold !important; font-size: 1.1rem !important; text-align: center !important; margin-top: 0.5rem !important; }
+    .description-card { background: rgba(20,20,30,0.95); border-radius: 30px; padding: 1.8rem; margin-top: 2rem; border-left: 10px solid #ffb347; font-family: 'Georgia', serif; color: #ffffff !important; font-weight: 700; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    .artwork-title { font-size: 2rem; font-weight: bold; color: #ffd966; text-align: center; margin-bottom: 0.5rem; }
+    .artwork-detail { font-size: 1.1rem; line-height: 1.6; text-align: justify; color: #ffffff !important; font-weight: 500; }
+    .signature { margin-top: 2rem; text-align: right; font-family: 'Brush Script MT', cursive; font-size: 1.5rem; color: #ffd966 !important; font-weight: bold; border-top: 1px solid #ffb347; padding-top: 1rem; }
+    .contact-info { font-family: monospace; font-size: 0.9rem; color: #ffffff !important; font-weight: 600; text-align: center; margin-top: 1rem; }
+    .print-button, .regenerate-btn, .download-button { text-align: center; margin: 1rem 0; }
+    .stButton button { background-color: #e94560 !important; color: white !important; border-radius: 30px !important; font-weight: bold !important; border: none; padding: 0.5rem 1.5rem; }
+    .stButton button:hover { background-color: #ff6b6b !important; transform: scale(1.02); }
+    .history-item { margin-bottom: 1rem; text-align: center; background: rgba(0,0,0,0.3); padding: 0.5rem; border-radius: 15px; }
     @media print {
-        .stApp, .print-button, .regenerate-btn, .download-button, header, footer, [data-testid="stToolbar"], [data-testid="stSidebar"] {
-            display: none !important;
-        }
-        .gallery-container {
-            margin: 0;
-            padding: 0;
-        }
-        .painting-frame {
-            box-shadow: none;
-            padding: 0;
-        }
-        .description-card {
-            background: white !important;
-            color: black !important;
-            border: 1px solid #ccc;
-        }
-        .description-card * {
-            color: black !important;
-        }
-        .signature, .contact-info {
-            color: black !important;
-        }
-        .print-only {
-            display: block !important;
-        }
+        .stApp, .print-button, .regenerate-btn, .download-button, header, footer, [data-testid="stToolbar"], [data-testid="stSidebar"] { display: none !important; }
+        .gallery-container { margin: 0; padding: 0; }
+        .painting-frame { box-shadow: none; padding: 0; }
+        .description-card { background: white !important; color: black !important; border: 1px solid #ccc; }
+        .description-card * { color: black !important; }
+        .signature, .contact-info { color: black !important; }
+        .print-only { display: block !important; }
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# ---------- IMPROVED PROMPT FOR REALISTIC HUMAN ANATOMY ----------
+# ---------- IMPROVED PROMPT FOR TWO BOYS (left and right) ----------
 prompt = (
-    "Oil painting, fine art, realistic style. Four Haitian boys, age 8-12, bare-chested, wearing only short ripped pants, "
-    "playing soccer in a muddy camp city under heavy rain. Their bodies are complete and well-proportioned: each boy has "
-    "two arms, two hands with five fingers, two legs, two feet with toes. Their faces are clearly visible, natural, "
-    "with realistic expressions of joy and concentration. No missing limbs, no distorted anatomy, no extra or missing fingers. "
-    "The soccer ball is made of rolled-up black socks. Two small makeshift goals made of sticks and scrap wood. "
+    "Oil painting, fine art, realistic style. Two Haitian boys, age 8-12, bare-chested, wearing only short ripped pants, "
+    "playing soccer in a muddy camp city under heavy rain. One boy is on the left side of the image, the other on the right side. "
+    "Their bodies are complete and well-proportioned: each boy has two arms, two hands with five fingers, two legs, two feet with toes. "
+    "Their faces are clearly visible, natural, with realistic expressions of joy and concentration. No missing limbs, no distorted anatomy, no extra or missing fingers. "
+    "The soccer ball is made of rolled-up black socks, placed between them. Two small makeshift goals made of sticks and scrap wood. "
     "Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, warm earthy colors, dramatic lighting. "
     "High detail, professional gallery quality, photorealistic human figures."
 )
