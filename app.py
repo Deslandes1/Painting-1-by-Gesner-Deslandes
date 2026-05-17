@@ -3,7 +3,6 @@ import requests
 from PIL import Image
 from io import BytesIO
 import datetime
-import os
 
 # ---------- PAGE CONFIG ----------
 st.set_page_config(
@@ -68,7 +67,7 @@ def get_translations(lang):
             "gallery_title": "Galería de arte GlobalInternet.py",
             "subtitle": "« Nacimiento en el Liceo » – Pintura original asistida por IA por Gesner Deslandes",
             "artwork_title": "👶 “Nacimiento en el Liceo” – Mujer embarazada dando a luz en una escuela de refugiados, Puerto Príncipe",
-            "description": "Frente al Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada negra haitiana yace en el suelo de cemento en la entrada principal. Su vestido está levantado, sus piernas están dobladas y naturalmente abiertas, y su gran vientre redondo es claramente visible. Está en trabajo de parto activo. Un hombre a su izquierda (con camiseta y jeans azules) se arrodilla a su lado. Una mujer a su derecha (con vestido colorido) se arrodilla en el suelo, tomando las manos de la mujer embarazada, ayudándola a respirar y pujar. Otros haitianos negros están en el fondo cerca del edificio, observando. Algunos hombres usan camisas con jeans negros; otros usan camisetas con jeans azules. Las mujeres en el fondo usan vestidos normales de varios colores. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol. El edificio tiene el nombre 'Lycee Du Cencenquantenaire' claramente pintado en la pared superior. La escena es realista, emocionalmente poderosa, con luz cálida que proyecta sombras. Sin lluvia, solo un día pasado por sol.",
+            "description": "Frente al Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada negra haitiana yace en el suelo de cemento en la entrada principal. Su vestido está levantado, sus piernas están dobladas y naturalmente abiertas, y su gran vientre redondo es claramente visible. Está en trabajo de parto activo. Un hombre a su izquierda (con camiseta y jeans azules) se arrodilla a su lado. Una mujer a su derecha (con vestido colorido) se arrodilla en el suelo, tomando las manos de la mujer embarazada, ayudándola a respirar y pujar. Otros haitianos negros están en el fondo cerca del edificio, observando. Algunos hombres usan camisas con jeans negros; otros usan camisetas con jeans azules. Las mujeres en el fondo usan vestidos normales de varios colores. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol. El edificio tiene el nombre 'Lycee Du Cencenquantenaire' claramente pintado en la pared superior. La escena es realista, emocionalmente poderosa, con luz cálida que proyecta sombras. Sin lluvia, solo un día soleado.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -148,31 +147,25 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- PROMPT ----------
+# ---------- PROMPT (Fallback Generator) ----------
 prompt = """
 Realistic oil painting, fine art, photorealistic style. The scene is set in Port‑au‑Prince, Haiti, on a bright sunny day (no rain).
-
-In the background stands a large multi‑story concrete school building. On the top wall of the building, the name "Lycee Du Cencenquantenaire" is clearly painted in large, visible French letters. The building has several balconies on each floor. On every balcony, displaced families have hung clothes to dry: shirts, t‑shirts, pants, dresses, and sleeping rugs.
-
-In the foreground, at the main entrance yard, a pregnant Black Haitian woman lies on her back on dry concrete ground. Her face is completely normal, human, with natural features: two eyes, a nose, a mouth, expressing pain and effort. Her head, shoulders, chest, and arms are normally formed. She has one right arm and one left arm – both are normal, complete, with hands and five fingers each. Her large, round, heavy pregnant belly is very prominent. Her dress is pulled up above her belly. Her legs are normal human legs, proportionate to her body, bent at the knees and spread open for delivery – not too big, not too small.
-
-A Black Haitian woman penetrates the ground on the pregnant woman's right side. She wears a colorful dress. She is holding the pregnant woman's hands, helping her breathe and push. A Black Haitian man kneels on the left side, wearing a t‑shirt and blue jeans. Both helpers have normal human bodies, complete arms and hands.
-
-Other Black Haitian people (men and women) stand in the background near the building, watching. Some men wear shirts with black jeans; others wear t‑shirts with blue jeans. The women in the background wear normal dresses of various colors.
-
-All people have realistic Black skin tones, natural faces, and correctly proportioned bodies. No missing limbs, no extra limbs, no distorted fingers, no monster‑like features. The ground is concrete, warm sunlight casts soft shadows. The scene is easy to understand: a woman giving birth with two helpers.
+In the background stands a large multi‑story concrete school building with the name "Lycee Du Cencenquantenaire" clearly painted on the top wall.
 """
 
-def generate_painting(prompt):
-    seed = int(datetime.datetime.now().timestamp())
-    url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true&seed={seed}"
+def fetch_image_from_url(url):
     try:
-        response = requests.get(url, timeout=90)
+        response = requests.get(url, timeout=30)
         if response.status_code == 200:
             return Image.open(BytesIO(response.content))
     except:
         pass
     return None
+
+def generate_painting(prompt):
+    seed = int(datetime.datetime.now().timestamp())
+    url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true&seed={seed}"
+    return fetch_image_from_url(url)
 
 def pil_to_bytes(img, format="PNG"):
     buf = BytesIO()
@@ -184,14 +177,14 @@ if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
 
 if "painting_img" not in st.session_state:
-    # Explicit directory targeting for your specific file path configuration
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    local_img_path = os.path.join(base_dir, "image_45ffc9.jpg")
+    # Uses the direct URL routing pointing straight to your repository file via raw content paths
+    github_raw_url = "https://raw.githubusercontent.com/Deslandes1/Painting-1-by-Gesner-Deslandes/main/pregnant%20woman.jpg"
     
-    if os.path.exists(local_img_path):
-        st.session_state.painting_img = Image.open(local_img_path)
+    loaded_img = fetch_image_from_url(github_raw_url)
+    if loaded_img:
+        st.session_state.painting_img = loaded_img
     else:
-        # Fallback to generation script if filename is altered or missing inside directory
+        # Failsafe generator in case web routing changes or breaks
         st.session_state.painting_img = generate_painting(prompt)
 
 # ---------- LANGUAGE SELECTION ----------
