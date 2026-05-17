@@ -91,7 +91,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Galeri D'Art",
             "subtitle": "'Nesans nan Lise a' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
             "artwork_title": "👶 “Nesans nan Lise a” – Fanm ansent ap akouche devan yon lekòl refijye, Pòtoprens",
-            "description": "Devan Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a se yon abri refijye, yon fanm ansent nwa Ayisyèn kouche sou tè konkrè a devan pòtay prensipal la. Rad li leve, janm li pliye ak natirèlman louvri, ak gwo vant wonn li byen vizib. Li nan travay akouchman. Yon gason sou bò gòch li (ki mete t‑chèz ak pantalon ble) jenou atè bò kote l. Yon fanm sou bò dwat li (ki mete yon rad kolore) jenou atè sou tè a, kenbe men fanm ansent la, ede l respire ak pouse. Lòt moun nwa Ayisyen yo kanpe nan dèyè bò bilding lan, ap gade. Gen gason ki mete chemiz ak pantalon nwa, gen lòt ki mete t‑chèz ak pantalon ble. Fanm nan dèyè yo mete rad nòmal ak koulè diferan. Sou chak galri bilding lan, fanmi deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen non 'Lycee Du Cencenquantenaire' pentire klèman sou miray anlè a. Sèn nan reyalis, fò anpil emosyon, ak limyè cho ki bay lonbraj. Pa gen lapli, sèlman yon jou solèy.",
+            "description": "Devan Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a se yon abri refijye, yon fanm ansent nwa Ayisyèn kouche sou tè konkrè a devan pòtay prensipal la. Rad li leve, janm li pliye ak natirèlman louvri, ak gwo vant wonn li byen vizib. Li nan travay akouchman. Yon gason sou bò gòch li (ki mete t‑chèz ak pantalon ble) jenou atè bò kote l. Yon fanm sou bò dwat li (ki mete yon rad kolore) jenou atè sou tè a, kenbe men fanm ansent la, ede l respire ak pouse. Lòt moun nwa Ayisyen yo kanpe nan dèyè bò bilding lan, ap gade. Gen gason ki mete chemiz ak pantalon nwa, gen lòt ki mete t‑chèz ak pantalon ble. Fanm nan dèyè yo mete rad nòmal ak koulè diferan. Sou chak galri bilding lan, fanmi deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen non 'Lycee Du Cencenquantenaire' pentire klèman sou miray anlè a. Sèn nan reyalis, fò anmil emosyon, ak limyè cho ki bay lonbraj. Pa gen lapli, sèlman yon jou solèy.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -147,7 +147,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- CORRECTED PROMPT (no double arm, proper leg proportions) ----------
+# ---------- PROMPT ----------
 prompt = """
 Realistic oil painting, fine art, photorealistic style. The scene is set in Port‑au‑Prince, Haiti, on a bright sunny day (no rain).
 
@@ -163,7 +163,9 @@ All people have realistic Black skin tones, natural faces, and correctly proport
 """
 
 def generate_painting(prompt):
-    url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true"
+    # Generates a seed based on timestamp to ensure a fresh rendition every single time
+    seed = int(datetime.datetime.now().timestamp())
+    url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true&seed={seed}"
     try:
         response = requests.get(url, timeout=90)
         if response.status_code == 200:
@@ -178,13 +180,12 @@ def pil_to_bytes(img, format="PNG"):
     return buf.getvalue()
 
 # ---------- SESSION STATE ----------
-if "painting_img" not in st.session_state:
-    with st.spinner("🎨 Creating your painting... Please wait (may take 20-30 seconds)."):
-        st.session_state.painting_img = generate_painting(prompt)
-        st.session_state.painting_history = []
-
 if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
+
+if "painting_img" not in st.session_state:
+    # On first load, dynamically construct the painting
+    st.session_state.painting_img = generate_painting(prompt)
 
 # ---------- LANGUAGE SELECTION ----------
 st.sidebar.markdown("## 🌐 Language / Langue")
@@ -236,6 +237,8 @@ with col2:
         if st.button(t['regenerate_btn'], use_container_width=True, key="regenerate"):
             if st.session_state.painting_img is not None:
                 st.session_state.painting_history.append(st.session_state.painting_img.copy())
+            
+            # Show the loader element gracefully before replacing the core viewport frame
             with st.spinner(t['loading']):
                 st.session_state.painting_img = generate_painting(prompt)
                 st.rerun()
