@@ -3,6 +3,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 import datetime
+import os
 
 # ---------- PAGE CONFIG ----------
 st.set_page_config(
@@ -84,7 +85,7 @@ def get_translations(lang):
             "img_caption": "« Nacimiento en el Liceo » – Pintura original",
             "history_title": "📚 Historial de pinturas",
             "download_history_btn": "💾 Descargar",
-            "clear_history_btn": "🗑️ Borrar historial",
+            "clear_history_btn": "Borrar historial",
             "no_history": "No hay pinturas guardadas. Genere algunas para verlas aquí."
         },
         "ht": {
@@ -163,7 +164,6 @@ All people have realistic Black skin tones, natural faces, and correctly proport
 """
 
 def generate_painting(prompt):
-    # Generates a seed based on timestamp to ensure a fresh rendition every single time
     seed = int(datetime.datetime.now().timestamp())
     url = f"https://image.pollinations.ai/prompt/{requests.utils.quote(prompt)}?width=1024&height=1024&nologo=true&seed={seed}"
     try:
@@ -184,8 +184,13 @@ if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
 
 if "painting_img" not in st.session_state:
-    # On first load, dynamically construct the painting
-    st.session_state.painting_img = generate_painting(prompt)
+    # First priority: Look for your specific uploaded image file locally
+    local_img_path = "image_45f4bf.jpg"
+    if os.path.exists(local_img_path):
+        st.session_state.painting_img = Image.open(local_img_path)
+    else:
+        # Fallback to generating via code if the image file isn't found in your directory
+        st.session_state.painting_img = generate_painting(prompt)
 
 # ---------- LANGUAGE SELECTION ----------
 st.sidebar.markdown("## 🌐 Language / Langue")
@@ -238,7 +243,6 @@ with col2:
             if st.session_state.painting_img is not None:
                 st.session_state.painting_history.append(st.session_state.painting_img.copy())
             
-            # Show the loader element gracefully before replacing the core viewport frame
             with st.spinner(t['loading']):
                 st.session_state.painting_img = generate_painting(prompt)
                 st.rerun()
