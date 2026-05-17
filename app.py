@@ -17,9 +17,9 @@ def get_translations(lang):
     texts = {
         "en": {
             "gallery_title": "GlobalInternet.py Art Gallery",
-            "subtitle": "'Mango Girl' – Original AI‑assisted painting by Gesner Deslandes",
-            "artwork_title": "🍋 “Mango Girl” – Five Years Old, Camp City, Port‑au‑Prince",
-            "description": "A five‑year‑old girl sits on a torn rug, her bare feet touching the slightly dirty floor of a makeshift camp city.\nIn her small hands, a ripe mango – its sweet juice drips down her chin, staining her already torn little outfit.\nBehind her, a patchwork of tarps and corrugated metal shelters other families living in the same precarious dignity.\nYet her eyes hold no despair – only the simple joy of eating a fruit under the Haitian sun.\nThis painting captures childhood resilience in the face of poverty, the beauty of a moment stolen from hardship.",
+            "subtitle": "'Soccer Boys' – Original AI‑assisted painting by Gesner Deslandes",
+            "artwork_title": "⚽ “Soccer Boys” – Four Boys Playing with a Sock Ball in Camp City, Under the Rain",
+            "description": "Four bare‑chested boys, wearing only short pants, kick a ball made of rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -33,7 +33,7 @@ def get_translations(lang):
             "error": "Failed to generate painting. Please check your internet connection and try again.",
             "sidebar_title": "🌐 Language",
             "sidebar_instruction": "Select your language",
-            "img_caption": "'Mango Girl' – Original Painting",
+            "img_caption": "'Soccer Boys' – Original Painting",
             "history_title": "📚 Painting History",
             "download_history_btn": "💾 Download",
             "clear_history_btn": "🗑️ Clear history",
@@ -41,9 +41,9 @@ def get_translations(lang):
         },
         "fr": {
             "gallery_title": "Galerie d'art GlobalInternet.py",
-            "subtitle": "« Mango Girl » – Peinture originale assistée par IA par Gesner Deslandes",
-            "artwork_title": "🍋 « Mango Girl » – Cinq ans, Camp City, Port‑au‑Prince",
-            "description": "Une fillette de cinq ans est assise sur un tapis déchiré, ses pieds nus touchant le sol légèrement sale d'une ville de campement précaire.\nDans ses petites mains, une mangue mûre – son jus sucré coule sur son menton, tachant sa petite tenue déjà déchirée.\nDerrière elle, un patchwork de bâches et de tôles ondulées abrite d'autres familles vivant dans la même dignité précaire.\nPourtant, ses yeux ne montrent aucun désespoir – seulement la joie simple de manger un fruit sous le soleil haïtien.\nCette peinture capture la résilience de l'enfance face à la pauvreté, la beauté d'un moment volé à la difficulté.",
+            "subtitle": "« Soccer Boys » – Peinture originale assistée par IA par Gesner Deslandes",
+            "artwork_title": "⚽ « Soccer Boys » – Quatre garçons jouant avec un ballon en chaussettes sous la pluie, camp ville",
+            "description": "Quatre garçons torse nu, portant seulement des shorts, frappent un ballon fait de chaussettes noires roulées au milieu d'une ville de campement boueuse. La pluie tombe, trempant le sol. Ils ont créé leur propre petit terrain de football avec deux buts de fortune – fabriqués à partir de courts bâtons ou de bois de récupération. Les pieds des garçons éclaboussent les flaques en poursuivant le ballon‑chaussette, leurs rires résonnant à travers les bâches et les tôles ondulées derrière eux. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football qui fleurissent même dans les conditions les plus dures.",
             "artist": "Artiste : Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -57,7 +57,7 @@ def get_translations(lang):
             "error": "Échec de la génération. Vérifiez votre connexion internet et réessayez.",
             "sidebar_title": "🌐 Langue",
             "sidebar_instruction": "Choisissez votre langue",
-            "img_caption": "« Mango Girl » – Peinture originale",
+            "img_caption": "« Soccer Boys » – Peinture originale",
             "history_title": "📚 Historique des peintures",
             "download_history_btn": "💾 Télécharger",
             "clear_history_btn": "🗑️ Effacer l'historique",
@@ -65,9 +65,9 @@ def get_translations(lang):
         },
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
-            "subtitle": "« Mango Girl » – Pintura original asistida por IA por Gesner Deslandes",
-            "artwork_title": "🍋 « Mango Girl » – Cinco años, Camp City, Puerto Príncipe",
-            "description": "Una niña de cinco años sentada sobre una alfombra rota, sus pies descalzos tocando el suelo ligeramente sucio de una ciudad de campamento improvisado.\nEn sus pequeñas manos, un mango maduro – su jugo dulce gotea por su barbilla, manchando su pequeño vestido ya roto.\nDetrás de ella, un mosaico de lonas y láminas de metal corrugado alberga a otras familias que viven en la misma dignidad precaria.\nSin embargo, sus ojos no muestran desesperación – solo la simple alegría de comer una fruta bajo el sol haitiano.\nEsta pintura captura la resiliencia infantil frente a la pobreza, la belleza de un momento robado a la adversidad.",
+            "subtitle": "« Soccer Boys » – Pintura original asistida por IA por Gesner Deslandes",
+            "artwork_title": "⚽ “Soccer Boys” – Cuatro niños jugando con un balón de calcetines bajo la lluvia, ciudad de campamento",
+            "description": "Cuatro niños desnudos de la cintura para arriba, con solo pantalones cortos, patean un balón hecho de calcetines negros enrollados en medio de una ciudad de campamento llena de barro. La lluvia cae, empapando el suelo. Han creado su propio pequeño campo de fútbol con dos porterías improvisadas – hechas de palos cortos o madera reciclada. Los pies de los niños salpican charcos mientras persiguen el balón de calcetín, sus risas resuenan entre las lonas y las chapas de metal corrugado detrás de ellos. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura la creatividad, la resiliencia y el puro amor por el fútbol que florece incluso en las condiciones más difíciles.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -81,7 +81,7 @@ def get_translations(lang):
             "error": "Error al generar la pintura. Verifique su conexión a internet e intente de nuevo.",
             "sidebar_title": "🌐 Idioma",
             "sidebar_instruction": "Seleccione su idioma",
-            "img_caption": "« Mango Girl » – Pintura original",
+            "img_caption": "« Soccer Boys » – Pintura original",
             "history_title": "📚 Historial de pinturas",
             "download_history_btn": "💾 Descargar",
             "clear_history_btn": "🗑️ Borrar historial",
@@ -89,9 +89,9 @@ def get_translations(lang):
         },
         "ht": {
             "gallery_title": "GlobalInternet.py Galeri D'Art",
-            "subtitle": "'Mango Girl' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
-            "artwork_title": "🍋 “Mango Girl” – Senk ane, Camp City, Pòtoprens",
-            "description": "Yon ti fi senk ane chita sou yon tapi chire, pye atè li touche planche ki gen ti salte nan yon vil kan rezèv.\nNan ti men li, yon mango mi – ji dous li koule sou manton li, sali ti rad li deja chire.\nDèyè li, yon melanj twal ak tòl kouvri lòt fanmi k ap viv nan menm diyite presè.\nMen je li pa montre dezespwa – sèlman kè kontan senp manje yon fwi anba solèy la ann Ayiti.\nTablo sa a montre rezistans timoun devan povrete, bèlte yon moman yo vòlè nan difikilte.",
+            "subtitle": "'Soccer Boys' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
+            "artwork_title": "⚽ “Soccer Boys” – Kat ti gason ap jwe foutbòl ak yon boul chosèt anba lapli, nan kan vil",
+            "description": "Kat ti gason san chemiz, ki mete sèlman bout pantalon, ap choute yon boul fèt ak chosèt nwa woule nan mitan yon vil kan labou. Lapli ap tonbe, tranpe tè a. Yo kreye ti teren foutbòl pa yo ak de biyo pwovizwa – chak fèt ak ti branch bwa oswa bwa resikle. Pye ti gason yo ap vole nan flak dlo pandan y ap kouri dèyè boul chosèt la, ri yo ap fè eko nan twal ak tòl dèyè yo. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl ki florí menm nan kondisyon ki pi rèd yo.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -105,7 +105,7 @@ def get_translations(lang):
             "error": "Pa t kapab kreye tablo a. Tcheke koneksyon entènèt ou epi eseye ankò.",
             "sidebar_title": "🌐 Lang",
             "sidebar_instruction": "Chwazi lang ou",
-            "img_caption": "'Mango Girl' – Tablo Orijinal",
+            "img_caption": "'Soccer Boys' – Tablo Orijinal",
             "history_title": "📚 Istorik tablo yo",
             "download_history_btn": "💾 Telechaje",
             "clear_history_btn": "🗑️ Efase istorik",
@@ -254,13 +254,13 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- PROMPT FOR AI PAINTING ----------
+# ---------- PROMPT FOR AI PAINTING (SOCCER BOYS) ----------
 prompt = (
-    "A five-year-old Haitian girl with dark skin, curly black hair, sitting on a torn, faded rug on a slightly dirty floor. "
-    "She is eating a ripe mango, juice dripping from her mouth, staining her torn, colorful little dress. "
-    "Behind her, a camp city with multiple tarps and makeshift homes made of corrugated metal and wood, other families visible. "
-    "The setting is Port-au-Prince, Haiti, under a bright sky. Realistic oil painting style, fine art, detailed, warm colors, "
-    "emotional, professional gallery quality."
+    "Four bare‑chested Haitian boys, wearing only short pants, playing soccer in a muddy camp city under heavy rain. "
+    "The ball is made of rolled‑up black socks. Behind them are tarps and corrugated metal makeshift homes. "
+    "Two small makeshift goals made of short sticks or scrap wood are visible. The boys are kicking the sock ball, "
+    "splashing in puddles, their bodies wet. Realistic oil painting style, fine art, detailed, warm earthy colors, "
+    "emotional, professional gallery quality, dramatic rain lighting."
 )
 
 def generate_painting(prompt):
@@ -283,7 +283,7 @@ def pil_to_bytes(img, format="PNG"):
 if "painting_img" not in st.session_state:
     with st.spinner("🎨 Creating your painting... Please wait (may take 20-30 seconds)."):
         st.session_state.painting_img = generate_painting(prompt)
-        st.session_state.painting_history = []  # list of (timestamp, image_bytes) or images
+        st.session_state.painting_history = []
 
 if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
@@ -312,14 +312,12 @@ if not st.session_state.painting_history:
     st.sidebar.info(t['no_history'])
 else:
     for idx, img in enumerate(reversed(st.session_state.painting_history)):
-        # Show thumbnail (resized for sidebar)
         st.sidebar.image(img, use_container_width=True, caption=f"Version {len(st.session_state.painting_history)-idx}")
-        # Download button for each history item
         img_bytes = pil_to_bytes(img)
         st.sidebar.download_button(
             label=f"{t['download_history_btn']} #{len(st.session_state.painting_history)-idx}",
             data=img_bytes,
-            file_name=f"mango_girl_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{idx}.png",
+            file_name=f"soccer_boys_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{idx}.png",
             mime="image/png",
             key=f"hist_dl_{idx}"
         )
@@ -345,20 +343,18 @@ with col2:
     col_btn1, col_btn2 = st.columns(2)
     with col_btn1:
         if st.button(t['regenerate_btn'], use_container_width=True, key="regenerate"):
-            # Save current painting to history (if exists)
             if st.session_state.painting_img is not None:
                 st.session_state.painting_history.append(st.session_state.painting_img.copy())
             with st.spinner(t['loading']):
                 st.session_state.painting_img = generate_painting(prompt)
                 st.rerun()
     with col_btn2:
-        # Download button for current painting
         if st.session_state.painting_img is not None:
             img_bytes = pil_to_bytes(st.session_state.painting_img)
             st.download_button(
                 label=t['download_btn'],
                 data=img_bytes,
-                file_name=f"mango_girl_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
+                file_name=f"soccer_boys_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
                 mime="image/png",
                 use_container_width=True,
                 key="download_current"
