@@ -19,7 +19,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Art Gallery",
             "subtitle": "'Soccer Boys' – Original AI‑assisted painting by Gesner Deslandes",
             "artwork_title": "⚽ “Soccer Boys” – Four Boys Playing with a Sock Ball in Camp City, Under the Rain",
-            "description": "Four bare‑chested boys, wearing only short pants, kick a ball made of rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
+            "description": "Four bare‑chested Haitian boys, wearing only short pants, kick a ball made of rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -114,15 +114,13 @@ def get_translations(lang):
     }
     return texts[lang]
 
-# ---------- CUSTOM CSS (dark gallery, white bold text, image caption white) ----------
+# ---------- CUSTOM CSS (same as before) ----------
 st.markdown(
     """
     <style>
-    /* Main background */
     .stApp {
         background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1a 100%);
     }
-    /* Sidebar styling */
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, #1e2a3e, #0f1722);
         border-right: 2px solid #ffb347;
@@ -130,13 +128,11 @@ st.markdown(
     [data-testid="stSidebar"] * {
         color: #f0f0f0 !important;
     }
-    /* Gallery container */
     .gallery-container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
     }
-    /* Painting frame */
     .painting-frame {
         background: #f5e6d3;
         padding: 1.5rem;
@@ -145,7 +141,6 @@ st.markdown(
         border: 1px solid #d4a373;
         text-align: center;
     }
-    /* Image caption – make it white and bold */
     .stCaption, .stImage figcaption {
         color: #ffffff !important;
         font-weight: bold !important;
@@ -153,7 +148,6 @@ st.markdown(
         text-align: center !important;
         margin-top: 0.5rem !important;
     }
-    /* Description card – dark background, strong white text */
     .description-card {
         background: rgba(20, 20, 30, 0.95);
         border-radius: 30px;
@@ -201,7 +195,6 @@ st.markdown(
         text-align: center;
         margin: 1rem 0;
     }
-    /* Button styling */
     .stButton button {
         background-color: #e94560 !important;
         color: white !important;
@@ -214,7 +207,6 @@ st.markdown(
         background-color: #ff6b6b !important;
         transform: scale(1.02);
     }
-    /* History thumbnails */
     .history-item {
         margin-bottom: 1rem;
         text-align: center;
@@ -254,13 +246,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- PROMPT FOR AI PAINTING (SOCCER BOYS) ----------
+# ---------- IMPROVED PROMPT FOR REALISTIC HUMAN ANATOMY ----------
 prompt = (
-    "Four bare‑chested Haitian boys, wearing only short pants, playing soccer in a muddy camp city under heavy rain. "
-    "The ball is made of rolled‑up black socks. Behind them are tarps and corrugated metal makeshift homes. "
-    "Two small makeshift goals made of short sticks or scrap wood are visible. The boys are kicking the sock ball, "
-    "splashing in puddles, their bodies wet. Realistic oil painting style, fine art, detailed, warm earthy colors, "
-    "emotional, professional gallery quality, dramatic rain lighting."
+    "Oil painting, fine art, realistic style. Four Haitian boys, age 8-12, bare-chested, wearing only short ripped pants, "
+    "playing soccer in a muddy camp city under heavy rain. Their bodies are complete and well-proportioned: each boy has "
+    "two arms, two hands with five fingers, two legs, two feet with toes. Their faces are clearly visible, natural, "
+    "with realistic expressions of joy and concentration. No missing limbs, no distorted anatomy, no extra or missing fingers. "
+    "The soccer ball is made of rolled-up black socks. Two small makeshift goals made of sticks and scrap wood. "
+    "Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, warm earthy colors, dramatic lighting. "
+    "High detail, professional gallery quality, photorealistic human figures."
 )
 
 def generate_painting(prompt):
@@ -274,7 +268,6 @@ def generate_painting(prompt):
     return None
 
 def pil_to_bytes(img, format="PNG"):
-    """Convert PIL Image to bytes for download."""
     buf = BytesIO()
     img.save(buf, format=format)
     return buf.getvalue()
@@ -288,21 +281,16 @@ if "painting_img" not in st.session_state:
 if "painting_history" not in st.session_state:
     st.session_state.painting_history = []
 
-# ---------- LANGUAGE SELECTION (SIDEBAR) ----------
+# ---------- LANGUAGE SELECTION ----------
 st.sidebar.markdown("## 🌐 Language / Langue")
 lang_choice = st.sidebar.selectbox(
     "Select your language",
     ["English", "Français", "Español", "Kreyòl Ayisyen"]
 )
-lang_map = {
-    "English": "en",
-    "Français": "fr",
-    "Español": "es",
-    "Kreyòl Ayisyen": "ht"
-}
+lang_map = {"English": "en", "Français": "fr", "Español": "es", "Kreyòl Ayisyen": "ht"}
 t = get_translations(lang_map[lang_choice])
 
-# ---------- SIDEBAR HISTORY GALLERY ----------
+# ---------- SIDEBAR HISTORY ----------
 st.sidebar.markdown(f"## {t['history_title']}")
 if st.sidebar.button(t['clear_history_btn']):
     st.session_state.painting_history = []
@@ -328,7 +316,6 @@ st.markdown('<div class="gallery-container">', unsafe_allow_html=True)
 st.markdown(f"<h1 style='text-align:center; color:#ffd966;'>{t['gallery_title']}</h1>", unsafe_allow_html=True)
 st.markdown(f"<p style='text-align:center; color:#ddd;'>{t['subtitle']}</p>", unsafe_allow_html=True)
 
-# Display painting
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown('<div class="painting-frame">', unsafe_allow_html=True)
@@ -338,7 +325,6 @@ with col2:
         st.error(t['error'])
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Regenerate button – save current to history before generating new
 with col2:
     col_btn1, col_btn2 = st.columns(2)
     with col_btn1:
@@ -360,12 +346,11 @@ with col2:
                 key="download_current"
             )
 
-# ---------- ARTWORK DESCRIPTION (translated) ----------
+# ---------- ARTWORK DESCRIPTION ----------
 st.markdown('<div class="description-card">', unsafe_allow_html=True)
 st.markdown(f'<div class="artwork-title">{t["artwork_title"]}</div>', unsafe_allow_html=True)
 st.markdown(f'<div class="artwork-detail">{t["description"]}</div>', unsafe_allow_html=True)
 
-# Artist signature and contact – translated
 st.markdown(
     f"""
     <div class="signature">
@@ -384,16 +369,8 @@ st.markdown('</div>', unsafe_allow_html=True)
 # ---------- PRINT BUTTON ----------
 st.markdown('<div class="print-button">', unsafe_allow_html=True)
 if st.button(t['print_btn'], use_container_width=True):
-    st.markdown(
-        """
-        <script>
-        window.print();
-        </script>
-        """,
-        unsafe_allow_html=True
-    )
+    st.markdown("<script>window.print();</script>", unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ---------- FOOTER ----------
 st.markdown(f'<p style="text-align:center; color:#aaa; margin-top:2rem;">{t["footer"]}</p>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
