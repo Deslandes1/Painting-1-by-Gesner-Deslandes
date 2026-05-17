@@ -30,7 +30,8 @@ def get_translations(lang):
             "loading": "🎨 Creating your painting... Please wait (may take 20-30 seconds).",
             "error": "Failed to generate painting. Please check your internet connection and try again.",
             "sidebar_title": "🌐 Language",
-            "sidebar_instruction": "Select your language"
+            "sidebar_instruction": "Select your language",
+            "img_caption": "'Mango Girl' – Original Painting"
         },
         "fr": {
             "gallery_title": "Galerie d'art GlobalInternet.py",
@@ -48,7 +49,8 @@ def get_translations(lang):
             "loading": "🎨 Création de votre peinture... Veuillez patienter (20-30 secondes).",
             "error": "Échec de la génération. Vérifiez votre connexion internet et réessayez.",
             "sidebar_title": "🌐 Langue",
-            "sidebar_instruction": "Choisissez votre langue"
+            "sidebar_instruction": "Choisissez votre langue",
+            "img_caption": "« Mango Girl » – Peinture originale"
         },
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
@@ -66,7 +68,8 @@ def get_translations(lang):
             "loading": "🎨 Creando su pintura... Espere (20-30 segundos).",
             "error": "Error al generar la pintura. Verifique su conexión a internet e intente de nuevo.",
             "sidebar_title": "🌐 Idioma",
-            "sidebar_instruction": "Seleccione su idioma"
+            "sidebar_instruction": "Seleccione su idioma",
+            "img_caption": "« Mango Girl » – Pintura original"
         },
         "ht": {
             "gallery_title": "GlobalInternet.py Galeri D'Art",
@@ -84,12 +87,13 @@ def get_translations(lang):
             "loading": "🎨 Kreyasyon tablo a... Tanpri tann (20-30 segonn).",
             "error": "Pa t kapab kreye tablo a. Tcheke koneksyon entènèt ou epi eseye ankò.",
             "sidebar_title": "🌐 Lang",
-            "sidebar_instruction": "Chwazi lang ou"
+            "sidebar_instruction": "Chwazi lang ou",
+            "img_caption": "'Mango Girl' – Tablo Orijinal"
         }
     }
     return texts[lang]
 
-# ---------- CUSTOM CSS (dark gallery, white bold text) ----------
+# ---------- CUSTOM CSS (dark gallery, white bold text, image caption white) ----------
 st.markdown(
     """
     <style>
@@ -120,22 +124,13 @@ st.markdown(
         border: 1px solid #d4a373;
         text-align: center;
     }
-    /* Image caption (figcaption) – force white with shadow */
-    .stImage figcaption {
+    /* Image caption – make it white and bold */
+    .stCaption, .stImage figcaption {
         color: #ffffff !important;
         font-weight: bold !important;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
-        background: rgba(0,0,0,0.4) !important;
-        display: inline-block !important;
-        padding: 0.2rem 1rem !important;
-        border-radius: 30px !important;
+        font-size: 1.1rem !important;
+        text-align: center !important;
         margin-top: 0.5rem !important;
-    }
-    /* Subtitle (under title) */
-    .subtitle-white {
-        color: #ffffff !important;
-        font-weight: 500;
-        text-align: center;
     }
     /* Description card – dark background, strong white text */
     .description-card {
@@ -224,11 +219,6 @@ st.markdown(
         .print-only {
             display: block !important;
         }
-        .stImage figcaption {
-            color: black !important;
-            text-shadow: none !important;
-            background: none !important;
-        }
     }
     </style>
     """,
@@ -276,14 +266,14 @@ t = get_translations(lang_map[lang_choice])
 # ---------- MAIN UI ----------
 st.markdown('<div class="gallery-container">', unsafe_allow_html=True)
 st.markdown(f"<h1 style='text-align:center; color:#ffd966;'>{t['gallery_title']}</h1>", unsafe_allow_html=True)
-st.markdown(f"<p class='subtitle-white'>{t['subtitle']}</p>", unsafe_allow_html=True)
+st.markdown(f"<p style='text-align:center; color:#ddd;'>{t['subtitle']}</p>", unsafe_allow_html=True)
 
 # Display painting
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown('<div class="painting-frame">', unsafe_allow_html=True)
     if st.session_state.painting_img:
-        st.image(st.session_state.painting_img, use_container_width=True, caption="'Mango Girl' – Original Painting")
+        st.image(st.session_state.painting_img, use_container_width=True, caption=t['img_caption'])
     else:
         st.error(t['error'])
     st.markdown('</div>', unsafe_allow_html=True)
