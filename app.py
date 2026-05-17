@@ -114,7 +114,7 @@ def get_translations(lang):
     }
     return texts[lang]
 
-# ---------- CSS (unchanged) ----------
+# ---------- CUSTOM CSS ----------
 st.markdown(
     """
     <style>
@@ -147,17 +147,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- EXTREMELY CLEAR PROMPT (no ambiguity, realistic human figures) ----------
+# ---------- IMPROVED PROMPT WITH HUMAN FACE GUARANTEE ----------
 prompt = (
     "Realistic oil painting. A pregnant Black Haitian woman lying on her back on concrete ground. "
-    "Her head, shoulders, arms, and chest are normally formed like a real human. Her large round pregnant belly is very visible. "
-    "Her dress is pulled up, her legs are bent and open. Her face shows pain and effort. "
+    "Her head, shoulders, arms, and chest are normally formed like a real human. "
+    "Her face is completely normal, human, with natural features: eyes, nose, mouth, expressing pain and effort. "
+    "Her large round pregnant belly is very visible. Her dress is pulled up, her legs are bent and open. "
     "A Black woman kneeling on the ground beside her, holding the pregnant woman's hands, helping her give birth. "
     "The kneeling woman wears a colorful dress. A Black man kneeling on the other side, wearing a t-shirt and blue jeans. "
     "In the background: a large concrete school building with balconies. Clothes hanging on every balcony. "
     "On the top wall of the building the name 'Lycee Du Cencenquantenaire' is painted. "
     "Other Black people (men and women) stand watching. The ground is dry concrete, bright sun, no rain. "
-    "The scene is easy to understand: a woman giving birth with two helpers. All bodies are normal, no distortions."
+    "All faces are normal, not distorted. The scene is easy to understand: a woman giving birth with two helpers."
 )
 
 def generate_painting(prompt):
