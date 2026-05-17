@@ -147,16 +147,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- ULTRA‑SPECIFIC PROMPT (ONE BALL AT RIGHT BOY'S FEET, REALISTIC BODY) ----------
+# ---------- ENHANCED PROMPT FOR REALISTIC ARMS AND HANDS ----------
 prompt = (
     "Oil painting, fine art, realistic style. Two Haitian boys, age 8-12, bare-chested, wearing only short ripped pants, "
     "playing soccer in a muddy camp city under heavy rain. The scene shows exactly two boys: one on the left, one on the right. "
     "There is only one ball. The ball is a round black ball made of several rolled-up black socks. The ball is positioned at the feet of the boy on the right. "
-    "The boy on the right is standing with the ball at his feet, about to kick it. He has a completely realistic, well-proportioned human body: "
-    "two arms, two hands with five fingers, two legs, two feet with toes, a normal left arm (attached, fully formed, with hand and fingers). "
-    "His face shows concentration, realistic skin texture, and natural expression. The boy on the left is running toward the ball; he also has a realistic body with all limbs. "
+    "The boy on the right is standing with the ball at his feet, about to kick it. He has a completely realistic, well-proportioned human body. "
+    "His arms and hands are perfectly normal: two arms, each with a hand that has five distinct fingers, no deformities, no missing fingers, no extra fingers. "
+    "His left arm is normal, fully attached, with a hand and five fingers. His right arm is also normal. His legs and feet are normal. "
+    "His face shows concentration, realistic skin texture, and natural expression. The boy on the left is running toward the ball; he also has realistic arms and hands with five fingers each, normal proportions. "
     "Two small makeshift goals made of sticks and scrap wood visible. Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, "
-    "warm earthy colors, dramatic lighting. High detail, professional gallery quality, photorealistic human figures. No distorted anatomy, no missing fingers, no extra limbs."
+    "warm earthy colors, dramatic lighting. High detail, professional gallery quality, photorealistic human figures. No distorted anatomy, no missing fingers, no extra limbs. "
+    "The painting must clearly show the fingers on both boys' hands, and the arms must look natural and anatomically correct."
 )
 
 def generate_painting(prompt):
