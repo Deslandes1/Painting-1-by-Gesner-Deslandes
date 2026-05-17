@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 from PIL import Image
 from io import BytesIO
+import datetime
 
 # ---------- PAGE CONFIG ----------
 st.set_page_config(
@@ -26,12 +27,17 @@ def get_translations(lang):
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
             "regenerate_btn": "🎨 Regenerate Painting (new version)",
             "print_btn": "🖨️ Print this artwork for exhibition",
+            "download_btn": "💾 Download this painting (PNG)",
             "footer": "© 2026 GlobalInternet.py – AI‑enhanced digital art exhibition software",
             "loading": "🎨 Creating your painting... Please wait (may take 20-30 seconds).",
             "error": "Failed to generate painting. Please check your internet connection and try again.",
             "sidebar_title": "🌐 Language",
             "sidebar_instruction": "Select your language",
-            "img_caption": "'Mango Girl' – Original Painting"
+            "img_caption": "'Mango Girl' – Original Painting",
+            "history_title": "📚 Painting History",
+            "download_history_btn": "💾 Download",
+            "clear_history_btn": "🗑️ Clear history",
+            "no_history": "No paintings saved yet. Generate some to see them here."
         },
         "fr": {
             "gallery_title": "Galerie d'art GlobalInternet.py",
@@ -45,12 +51,17 @@ def get_translations(lang):
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
             "regenerate_btn": "🎨 Regénérer la peinture (nouvelle version)",
             "print_btn": "🖨️ Imprimer cette œuvre pour exposition",
+            "download_btn": "💾 Télécharger cette peinture (PNG)",
             "footer": "© 2026 GlobalInternet.py – Logiciel d'exposition d'art numérique assisté par IA",
             "loading": "🎨 Création de votre peinture... Veuillez patienter (20-30 secondes).",
             "error": "Échec de la génération. Vérifiez votre connexion internet et réessayez.",
             "sidebar_title": "🌐 Langue",
             "sidebar_instruction": "Choisissez votre langue",
-            "img_caption": "« Mango Girl » – Peinture originale"
+            "img_caption": "« Mango Girl » – Peinture originale",
+            "history_title": "📚 Historique des peintures",
+            "download_history_btn": "💾 Télécharger",
+            "clear_history_btn": "🗑️ Effacer l'historique",
+            "no_history": "Aucune peinture sauvegardée. Générez-en pour les voir ici."
         },
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
@@ -64,12 +75,17 @@ def get_translations(lang):
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
             "regenerate_btn": "🎨 Regenerar pintura (nueva versión)",
             "print_btn": "🖨️ Imprimir esta obra para exposición",
+            "download_btn": "💾 Descargar esta pintura (PNG)",
             "footer": "© 2026 GlobalInternet.py – Software de exhibición de arte digital mejorado con IA",
             "loading": "🎨 Creando su pintura... Espere (20-30 segundos).",
             "error": "Error al generar la pintura. Verifique su conexión a internet e intente de nuevo.",
             "sidebar_title": "🌐 Idioma",
             "sidebar_instruction": "Seleccione su idioma",
-            "img_caption": "« Mango Girl » – Pintura original"
+            "img_caption": "« Mango Girl » – Pintura original",
+            "history_title": "📚 Historial de pinturas",
+            "download_history_btn": "💾 Descargar",
+            "clear_history_btn": "🗑️ Borrar historial",
+            "no_history": "No hay pinturas guardadas. Genere algunas para verlas aquí."
         },
         "ht": {
             "gallery_title": "GlobalInternet.py Galeri D'Art",
@@ -83,12 +99,17 @@ def get_translations(lang):
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
             "regenerate_btn": "🎨 Rekree tablo a (nouvo vèsyon)",
             "print_btn": "🖨️ Enprime travay sa a pou egzibisyon",
+            "download_btn": "💾 Telechaje tablo sa a (PNG)",
             "footer": "© 2026 GlobalInternet.py – Lojisyèl egzibisyon atis dijital avèk IA",
             "loading": "🎨 Kreyasyon tablo a... Tanpri tann (20-30 segonn).",
             "error": "Pa t kapab kreye tablo a. Tcheke koneksyon entènèt ou epi eseye ankò.",
             "sidebar_title": "🌐 Lang",
             "sidebar_instruction": "Chwazi lang ou",
-            "img_caption": "'Mango Girl' – Tablo Orijinal"
+            "img_caption": "'Mango Girl' – Tablo Orijinal",
+            "history_title": "📚 Istorik tablo yo",
+            "download_history_btn": "💾 Telechaje",
+            "clear_history_btn": "🗑️ Efase istorik",
+            "no_history": "Pa gen tablo ki sove. Kreye kèk pou wè yo isit la."
         }
     }
     return texts[lang]
@@ -176,9 +197,9 @@ st.markdown(
         text-align: center;
         margin-top: 1rem;
     }
-    .print-button, .regenerate-btn {
+    .print-button, .regenerate-btn, .download-button {
         text-align: center;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
     /* Button styling */
     .stButton button {
@@ -193,8 +214,16 @@ st.markdown(
         background-color: #ff6b6b !important;
         transform: scale(1.02);
     }
+    /* History thumbnails */
+    .history-item {
+        margin-bottom: 1rem;
+        text-align: center;
+        background: rgba(0,0,0,0.3);
+        padding: 0.5rem;
+        border-radius: 15px;
+    }
     @media print {
-        .stApp, .print-button, .regenerate-btn, header, footer, [data-testid="stToolbar"], [data-testid="stSidebar"] {
+        .stApp, .print-button, .regenerate-btn, .download-button, header, footer, [data-testid="stToolbar"], [data-testid="stSidebar"] {
             display: none !important;
         }
         .gallery-container {
@@ -244,10 +273,20 @@ def generate_painting(prompt):
         pass
     return None
 
+def pil_to_bytes(img, format="PNG"):
+    """Convert PIL Image to bytes for download."""
+    buf = BytesIO()
+    img.save(buf, format=format)
+    return buf.getvalue()
+
 # ---------- SESSION STATE ----------
 if "painting_img" not in st.session_state:
     with st.spinner("🎨 Creating your painting... Please wait (may take 20-30 seconds)."):
         st.session_state.painting_img = generate_painting(prompt)
+        st.session_state.painting_history = []  # list of (timestamp, image_bytes) or images
+
+if "painting_history" not in st.session_state:
+    st.session_state.painting_history = []
 
 # ---------- LANGUAGE SELECTION (SIDEBAR) ----------
 st.sidebar.markdown("## 🌐 Language / Langue")
@@ -262,6 +301,29 @@ lang_map = {
     "Kreyòl Ayisyen": "ht"
 }
 t = get_translations(lang_map[lang_choice])
+
+# ---------- SIDEBAR HISTORY GALLERY ----------
+st.sidebar.markdown(f"## {t['history_title']}")
+if st.sidebar.button(t['clear_history_btn']):
+    st.session_state.painting_history = []
+    st.rerun()
+
+if not st.session_state.painting_history:
+    st.sidebar.info(t['no_history'])
+else:
+    for idx, img in enumerate(reversed(st.session_state.painting_history)):
+        # Show thumbnail (resized for sidebar)
+        st.sidebar.image(img, use_container_width=True, caption=f"Version {len(st.session_state.painting_history)-idx}")
+        # Download button for each history item
+        img_bytes = pil_to_bytes(img)
+        st.sidebar.download_button(
+            label=f"{t['download_history_btn']} #{len(st.session_state.painting_history)-idx}",
+            data=img_bytes,
+            file_name=f"mango_girl_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{idx}.png",
+            mime="image/png",
+            key=f"hist_dl_{idx}"
+        )
+        st.sidebar.markdown("---")
 
 # ---------- MAIN UI ----------
 st.markdown('<div class="gallery-container">', unsafe_allow_html=True)
@@ -278,12 +340,29 @@ with col2:
         st.error(t['error'])
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Regenerate button
+# Regenerate button – save current to history before generating new
 with col2:
-    if st.button(t['regenerate_btn'], use_container_width=True, key="regenerate"):
-        with st.spinner(t['loading']):
-            st.session_state.painting_img = generate_painting(prompt)
-            st.rerun()
+    col_btn1, col_btn2 = st.columns(2)
+    with col_btn1:
+        if st.button(t['regenerate_btn'], use_container_width=True, key="regenerate"):
+            # Save current painting to history (if exists)
+            if st.session_state.painting_img is not None:
+                st.session_state.painting_history.append(st.session_state.painting_img.copy())
+            with st.spinner(t['loading']):
+                st.session_state.painting_img = generate_painting(prompt)
+                st.rerun()
+    with col_btn2:
+        # Download button for current painting
+        if st.session_state.painting_img is not None:
+            img_bytes = pil_to_bytes(st.session_state.painting_img)
+            st.download_button(
+                label=t['download_btn'],
+                data=img_bytes,
+                file_name=f"mango_girl_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
+                mime="image/png",
+                use_container_width=True,
+                key="download_current"
+            )
 
 # ---------- ARTWORK DESCRIPTION (translated) ----------
 st.markdown('<div class="description-card">', unsafe_allow_html=True)
