@@ -147,16 +147,16 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- FINAL PROMPT (realistic face + correct legs + helper) ----------
+# ---------- FINAL PROMPT WITH VISIBLE SCHOOL NAME AND CORRECT LEGS ----------
 prompt = (
     "Realistic oil painting. A pregnant Black Haitian woman lying on her back on concrete ground. "
     "Her face is completely normal, human, with natural features: eyes, nose, mouth, expressing pain and effort. "
     "Her body is normally formed: head, shoulders, arms, chest, belly. Her large round pregnant belly is very visible. "
-    "Her dress is pulled up. Her legs are natural human legs, bent at the knees and spread open so she can deliver the baby. "
+    "Her dress is pulled up. Her legs are normal human legs, bent at the knees and spread wide open for delivery. "
     "A Black woman kneeling on the ground beside her, holding the pregnant woman's hands, helping her give birth. "
     "The kneeling woman wears a colorful dress. A Black man kneeling on the other side, wearing a t-shirt and blue jeans. "
     "In the background: a large concrete school building with balconies. Clothes hanging on every balcony. "
-    "On the top wall of the building the name 'Lycee Du Cencenquantenaire' is painted. "
+    "The name 'Lycee Du Cencenquantenaire' is clearly painted in large letters on the top wall of the building, very visible. "
     "Other Black people (men and women) stand watching. The ground is dry concrete, bright sun, no rain. "
     "All faces are normal, not distorted. The scene is easy to understand: a woman giving birth with two helpers."
 )
