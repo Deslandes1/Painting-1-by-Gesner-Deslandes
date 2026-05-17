@@ -17,9 +17,9 @@ def get_translations(lang):
     texts = {
         "en": {
             "gallery_title": "GlobalInternet.py Art Gallery",
-            "subtitle": "'Soccer Boys' – Original AI‑assisted painting by Gesner Deslandes",
-            "artwork_title": "⚽ “Soccer Boys” – Two Boys Playing with a Sock Ball in Camp City, Under the Rain",
-            "description": "Two bare‑chested Haitian boys, wearing only short pants, play soccer in a muddy camp city under heavy rain. One round black ball made of several rolled‑up socks sits at the feet of the boy on the right. The boy on the left is running toward him. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles, their laughter echoing through the tarps and corrugated metal homes behind them. The boy on the right has a completely realistic body: two arms, two hands with five fingers, two legs, two feet with toes, and a normal left arm. His face shows concentration. The boy on the left is also fully proportioned. Despite the poverty and rain, their joy is unstoppable. This painting captures creativity, resilience, and pure love for soccer.",
+            "subtitle": "'Birth at the Lyceum' – Original AI‑assisted painting by Gesner Deslandes",
+            "artwork_title": "👶 “Birth at the Lyceum” – Pregnant Woman Giving Birth at a Refugee School, Port‑au‑Prince",
+            "description": "In front of the Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), a school now serving as a refugee shelter, a pregnant woman lies on the concrete ground at the main entrance, trying to give birth. A man and a woman kneel beside her, helping her breathe and deliver the baby without medical assistance. Several other people stand around, watching anxiously. On every balcony of the building, displaced families have hung clothes, shirts, pants, dresses, and sleeping rugs to dry under the bright sun. The building has multiple stories, each classroom now a home. The scene is peaceful yet tense, with no rain, only sunlight casting shadows. This painting captures resilience, community, and the raw reality of life in a camp city.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -33,7 +33,7 @@ def get_translations(lang):
             "error": "Failed to generate painting. Please check your internet connection and try again.",
             "sidebar_title": "🌐 Language",
             "sidebar_instruction": "Select your language",
-            "img_caption": "'Soccer Boys' – Original Painting",
+            "img_caption": "'Birth at the Lyceum' – Original Painting",
             "history_title": "📚 Painting History",
             "download_history_btn": "💾 Download",
             "clear_history_btn": "🗑️ Clear history",
@@ -41,9 +41,9 @@ def get_translations(lang):
         },
         "fr": {
             "gallery_title": "Galerie d'art GlobalInternet.py",
-            "subtitle": "« Soccer Boys » – Peinture originale assistée par IA par Gesner Deslandes",
-            "artwork_title": "⚽ « Soccer Boys » – Deux garçons jouant avec un ballon en chaussettes sous la pluie, camp ville",
-            "description": "Deux garçons torse nu, portant seulement des shorts, jouent au football dans une ville de campement boueuse sous une forte pluie. Un ballon rond noir fait de plusieurs chaussettes roulées repose aux pieds du garçon de droite. Le garçon de gauche court vers lui. Ils ont créé leur propre petit terrain avec deux buts de fortune – faits de bâtons courts ou de bois de récupération. Les pieds des garçons éclaboussent les flaques, leurs rires résonnent à travers les bâches et tôles ondulées derrière eux. Le garçon de droite a un corps complètement réaliste : deux bras, deux mains avec cinq doigts, deux jambes, deux pieds avec orteils, et un bras gauche normal. Son visage montre de la concentration. Le garçon de gauche est aussi bien proportionné. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football.",
+            "subtitle": "« Naissance au Lycée » – Peinture originale assistée par IA par Gesner Deslandes",
+            "artwork_title": "👶 « Naissance au Lycée » – Femme enceinte accouchant dans une école de réfugiés, Port‑au‑Prince",
+            "description": "Devant le Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), une école devenue refuge, une femme enceinte est allongée sur le sol en béton à l'entrée principale, tentant d'accoucher. Un homme et une femme l'aident à respirer et à délivrer le bébé sans assistance médicale. Plusieurs autres personnes se tiennent autour, regardant avec anxiété. À chaque balcon de l'immeuble, des familles déplacées ont suspendu vêtements, chemises, pantalons, robes et tapis de sol pour les faire sécher au soleil. Le bâtiment a plusieurs étages, chaque salle de classe est devenue un foyer. La scène est paisible mais tendue, sans pluie, seulement la lumière du soleil qui projette des ombres. Cette peinture capture la résilience, l'entraide et la réalité brute de la vie dans une ville de campement.",
             "artist": "Artiste : Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -57,7 +57,7 @@ def get_translations(lang):
             "error": "Échec de la génération. Vérifiez votre connexion internet et réessayez.",
             "sidebar_title": "🌐 Langue",
             "sidebar_instruction": "Choisissez votre langue",
-            "img_caption": "« Soccer Boys » – Peinture originale",
+            "img_caption": "« Naissance au Lycée » – Peinture originale",
             "history_title": "📚 Historique des peintures",
             "download_history_btn": "💾 Télécharger",
             "clear_history_btn": "🗑️ Effacer l'historique",
@@ -65,9 +65,9 @@ def get_translations(lang):
         },
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
-            "subtitle": "« Soccer Boys » – Pintura original asistida por IA por Gesner Deslandes",
-            "artwork_title": "⚽ “Soccer Boys” – Dos niños jugando con un balón de calcetines bajo la lluvia, ciudad de campamento",
-            "description": "Dos niños desnudos de cintura para arriba, con pantalones cortos, juegan al fútbol en una ciudad de campamento llena de barro bajo una fuerte lluvia. Un balón redondo negro hecho de varios calcetines enrollados está a los pies del niño de la derecha. El niño de la izquierda corre hacia él. Han creado su propio pequeño campo con dos porterías improvisadas de palos o madera reciclada. Los pies de los niños salpican charcos, sus risas resuenan entre las lonas y chapas de metal corrugado detrás de ellos. El niño de la derecha tiene un cuerpo completamente realista: dos brazos, dos manos con cinco dedos, dos piernas, dos pies con dedos, y un brazo izquierdo normal. Su rostro muestra concentración. El niño de la izquierda también está bien proporcionado. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura creatividad, resiliencia y amor puro por el fútbol.",
+            "subtitle": "« Nacimiento en el Liceo » – Pintura original asistida por IA por Gesner Deslandes",
+            "artwork_title": "👶 “Nacimiento en el Liceo” – Mujer embarazada dando a luz en una escuela de refugiados, Puerto Príncipe",
+            "description": "Frente al Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada yace en el suelo de cemento en la entrada principal, tratando de dar a luz. Un hombre y una mujer la ayudan a respirar y a entregar al bebé sin asistencia médica. Varias otras personas observan con ansiedad. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol brillante. El edificio tiene varios pisos, cada aula se ha convertido en un hogar. La escena es pacífica pero tensa, sin lluvia, solo la luz del sol que proyecta sombras. Esta pintura captura la resiliencia, la solidaridad y la cruda realidad de la vida en una ciudad de campamento.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -81,7 +81,7 @@ def get_translations(lang):
             "error": "Error al generar la pintura. Verifique su conexión a internet e intente de nuevo.",
             "sidebar_title": "🌐 Idioma",
             "sidebar_instruction": "Seleccione su idioma",
-            "img_caption": "« Soccer Boys » – Pintura original",
+            "img_caption": "« Nacimiento en el Liceo » – Pintura original",
             "history_title": "📚 Historial de pinturas",
             "download_history_btn": "💾 Descargar",
             "clear_history_btn": "🗑️ Borrar historial",
@@ -89,9 +89,9 @@ def get_translations(lang):
         },
         "ht": {
             "gallery_title": "GlobalInternet.py Galeri D'Art",
-            "subtitle": "'Soccer Boys' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
-            "artwork_title": "⚽ “Soccer Boys” – De ti gason ap jwe foutbòl ak yon boul chosèt anba lapli, nan kan vil",
-            "description": "De ti gason san chemiz, ki mete sèlman bout pantalon, ap jwe foutbòl nan yon vil kan labou anba gwo lapli. Yon boul wonn nwa ki fèt ak plizyè chosèt woule chita sou pye ti gason ki sou bò dwat la. Ti gason sou bò gòch la ap kouri al bò kote l. Yo kreye ti teren pa yo ak de biyo pwovizwa fèt ak ti branch bwa. Pye yo ap vole nan flak dlo, ri yo ap fè eko nan twal ak tòl dèyè yo. Ti gason sou bò dwat la gen yon kò totalman reyalis: de bra, de men ak senk dwèt, de janm, de pye ak zòtèy, ak yon bra gòch nòmal. Figi l montre konsantrasyon. Ti gason sou bò gòch la byen pwopòsyonè tou. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl.",
+            "subtitle": "'Nesans nan Lise a' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
+            "artwork_title": "👶 “Nesans nan Lise a” – Fanm ansent ap akouche devan yon lekòl refijye, Pòtoprens",
+            "description": "Devan Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a sèvi kòm abri refijye, yon fanm ansent kouche sou tè konkrè a devan pòtay prensipal la, ap eseye akouche. Yon gason ak yon fanm kanpe bò kote l, ede l respire ak delivre tibebe a san asistans medikal. Plizyè lòt moun kanpe ap gade ak enkyetid. Sou chak galri bilding lan, fanmi ki deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen plizyè etaj, chak sal klas tounen yon kay. Sèn nan trankil men tansyon, pa gen lapli, sèlman limyè solèy ki bay lonbraj. Tablo sa a montre rezistans, antray, ak reyalite anbarasan lavi nan yon vil kan.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -105,7 +105,7 @@ def get_translations(lang):
             "error": "Pa t kapab kreye tablo a. Tcheke koneksyon entènèt ou epi eseye ankò.",
             "sidebar_title": "🌐 Lang",
             "sidebar_instruction": "Chwazi lang ou",
-            "img_caption": "'Soccer Boys' – Tablo Orijinal",
+            "img_caption": "'Nesans nan Lise a' – Tablo Orijinal",
             "history_title": "📚 Istorik tablo yo",
             "download_history_btn": "💾 Telechaje",
             "clear_history_btn": "🗑️ Efase istorik",
@@ -114,7 +114,7 @@ def get_translations(lang):
     }
     return texts[lang]
 
-# ---------- CSS (unchanged) ----------
+# ---------- CUSTOM CSS ----------
 st.markdown(
     """
     <style>
@@ -147,18 +147,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- ENHANCED PROMPT FOR REALISTIC ARMS AND HANDS ----------
+# ---------- DETAILED PROMPT FOR THE NEW PAINTING ----------
 prompt = (
-    "Oil painting, fine art, realistic style. Two Haitian boys, age 8-12, bare-chested, wearing only short ripped pants, "
-    "playing soccer in a muddy camp city under heavy rain. The scene shows exactly two boys: one on the left, one on the right. "
-    "There is only one ball. The ball is a round black ball made of several rolled-up black socks. The ball is positioned at the feet of the boy on the right. "
-    "The boy on the right is standing with the ball at his feet, about to kick it. He has a completely realistic, well-proportioned human body. "
-    "His arms and hands are perfectly normal: two arms, each with a hand that has five distinct fingers, no deformities, no missing fingers, no extra fingers. "
-    "His left arm is normal, fully attached, with a hand and five fingers. His right arm is also normal. His legs and feet are normal. "
-    "His face shows concentration, realistic skin texture, and natural expression. The boy on the left is running toward the ball; he also has realistic arms and hands with five fingers each, normal proportions. "
-    "Two small makeshift goals made of sticks and scrap wood visible. Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, "
-    "warm earthy colors, dramatic lighting. High detail, professional gallery quality, photorealistic human figures. No distorted anatomy, no missing fingers, no extra limbs. "
-    "The painting must clearly show the fingers on both boys' hands, and the arms must look natural and anatomically correct."
+    "Oil painting, fine art, realistic style. In the background, a large multi‑story concrete school building: Lycee Du Centcinquantenaire (also known as Lycee Des Jeunes Filles). "
+    "The building has several balconies on each floor. On every balcony, displaced families have hung clothes: shirts, t-shirts, pants, dresses, sleeping rugs. "
+    "The building now serves as a refugee shelter for people displaced from Port‑au‑Prince. The ground in front is concrete, no rain, bright sunny day. "
+    "In the foreground, at the main entrance yard, a pregnant woman is lying on the concrete ground, trying to give birth. A man and a woman kneel beside her, "
+    "helping her breathe and assisting the delivery without any medical equipment. Several other people (men, women, children) stand in a circle watching, with expressions of concern and hope. "
+    "The scene is realistic, emotionally powerful, with warm sunlight casting shadows. All human figures have normal proportions, complete arms and hands with five fingers, realistic faces. "
+    "High detail, professional gallery quality, photorealistic."
 )
 
 def generate_painting(prompt):
@@ -209,7 +206,7 @@ else:
         st.sidebar.download_button(
             label=f"{t['download_history_btn']} #{len(st.session_state.painting_history)-idx}",
             data=img_bytes,
-            file_name=f"soccer_boys_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{idx}.png",
+            file_name=f"birth_lyceum_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{idx}.png",
             mime="image/png",
             key=f"hist_dl_{idx}"
         )
@@ -244,7 +241,7 @@ with col2:
             st.download_button(
                 label=t['download_btn'],
                 data=img_bytes,
-                file_name=f"soccer_boys_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
+                file_name=f"birth_lyceum_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
                 mime="image/png",
                 use_container_width=True,
                 key="download_current"
