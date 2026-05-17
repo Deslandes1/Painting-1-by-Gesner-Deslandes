@@ -19,7 +19,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Art Gallery",
             "subtitle": "'Birth at the Lyceum' – Original AI‑assisted painting by Gesner Deslandes",
             "artwork_title": "👶 “Birth at the Lyceum” – Pregnant Woman Giving Birth at a Refugee School, Port‑au‑Prince",
-            "description": "In front of the Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), a school now serving as a refugee shelter, a pregnant woman lies on the concrete ground at the main entrance, trying to give birth. A man and a woman kneel beside her, helping her breathe and deliver the baby without medical assistance. Several other people stand around, watching anxiously. On every balcony of the building, displaced families have hung clothes, shirts, pants, dresses, and sleeping rugs to dry under the bright sun. The building has multiple stories, each classroom now a home. The scene is peaceful yet tense, with no rain, only sunlight casting shadows. This painting captures resilience, community, and the raw reality of life in a camp city.",
+            "description": "In front of the Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), a school now serving as a refugee shelter, a pregnant Black Haitian woman lies on the concrete ground at the main entrance, her dress lifted, legs open, trying to give birth. A man on her left (wearing a t‑shirt and blue jeans) and a woman on her right (wearing a colorful dress) kneel beside her, helping her breathe and deliver without medical assistance. Other Black Haitians stand in the background near the building, watching. Some men wear shirts with black jeans; others wear t‑shirts with blue jeans. Women wear normal dresses of various colors. On every balcony of the building, displaced families have hung clothes, shirts, pants, dresses, and sleeping rugs to dry under the bright sun. The building has the name 'Lycee Du Cencenquantenaire' clearly visible. The scene is realistic, emotionally powerful, with warm sunlight casting shadows. No rain, only a sunny day.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -43,7 +43,7 @@ def get_translations(lang):
             "gallery_title": "Galerie d'art GlobalInternet.py",
             "subtitle": "« Naissance au Lycée » – Peinture originale assistée par IA par Gesner Deslandes",
             "artwork_title": "👶 « Naissance au Lycée » – Femme enceinte accouchant dans une école de réfugiés, Port‑au‑Prince",
-            "description": "Devant le Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), une école devenue refuge, une femme enceinte est allongée sur le sol en béton à l'entrée principale, tentant d'accoucher. Un homme et une femme l'aident à respirer et à délivrer le bébé sans assistance médicale. Plusieurs autres personnes se tiennent autour, regardant avec anxiété. À chaque balcon de l'immeuble, des familles déplacées ont suspendu vêtements, chemises, pantalons, robes et tapis de sol pour les faire sécher au soleil. Le bâtiment a plusieurs étages, chaque salle de classe est devenue un foyer. La scène est paisible mais tendue, sans pluie, seulement la lumière du soleil qui projette des ombres. Cette peinture capture la résilience, l'entraide et la réalité brute de la vie dans une ville de campement.",
+            "description": "Devant le Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), une école devenue refuge, une femme enceinte noire haïtienne est allongée sur le sol en béton à l'entrée principale, sa robe relevée, les jambes écartées, tentant d'accoucher. Un homme à sa gauche (portant un t‑shirt et un jean bleu) et une femme à sa droite (portant une robe colorée) l'aident à respirer et à délivrer le bébé sans assistance médicale. D'autres Haïtiens noirs se tiennent en arrière-plan près du bâtiment, regardant. Certains hommes portent des chemises avec jeans noirs, d'autres des t‑shirts avec jeans bleus. Les femmes portent des robes normales de différentes couleurs. À chaque balcon du bâtiment, des familles déplacées ont suspendu vêtements, chemises, pantalons, robes et tapis de sol pour les faire sécher au soleil. Le bâtiment porte le nom 'Lycee Du Cencenquantenaire' visible. La scène est réaliste, puissante, avec une lumière chaude projetant des ombres. Pas de pluie, seulement un jour ensoleillé.",
             "artist": "Artiste : Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -67,7 +67,7 @@ def get_translations(lang):
             "gallery_title": "Galería de arte GlobalInternet.py",
             "subtitle": "« Nacimiento en el Liceo » – Pintura original asistida por IA por Gesner Deslandes",
             "artwork_title": "👶 “Nacimiento en el Liceo” – Mujer embarazada dando a luz en una escuela de refugiados, Puerto Príncipe",
-            "description": "Frente al Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada yace en el suelo de cemento en la entrada principal, tratando de dar a luz. Un hombre y una mujer la ayudan a respirar y a entregar al bebé sin asistencia médica. Varias otras personas observan con ansiedad. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol brillante. El edificio tiene varios pisos, cada aula se ha convertido en un hogar. La escena es pacífica pero tensa, sin lluvia, solo la luz del sol que proyecta sombras. Esta pintura captura la resiliencia, la solidaridad y la cruda realidad de la vida en una ciudad de campamento.",
+            "description": "Frente al Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada negra haitiana yace en el suelo de cemento en la entrada principal, su vestido levantado, piernas abiertas, tratando de dar a luz. Un hombre a su izquierda (con camiseta y jeans azules) y una mujer a su derecha (con vestido colorido) la ayudan a respirar y a entregar al bebé sin asistencia médica. Otros haitianos negros están en el fondo cerca del edificio, observando. Algunos hombres usan camisas con jeans negros; otros usan camisetas con jeans azules. Las mujeres usan vestidos normales de varios colores. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol. El edificio tiene el nombre 'Lycee Du Cencenquantenaire' visible. La escena es realista, emocionalmente poderosa, con luz cálida que proyecta sombras. Sin lluvia, solo un día soleado.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -91,7 +91,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Galeri D'Art",
             "subtitle": "'Nesans nan Lise a' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
             "artwork_title": "👶 “Nesans nan Lise a” – Fanm ansent ap akouche devan yon lekòl refijye, Pòtoprens",
-            "description": "Devan Lycee Du Centcinquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a sèvi kòm abri refijye, yon fanm ansent kouche sou tè konkrè a devan pòtay prensipal la, ap eseye akouche. Yon gason ak yon fanm kanpe bò kote l, ede l respire ak delivre tibebe a san asistans medikal. Plizyè lòt moun kanpe ap gade ak enkyetid. Sou chak galri bilding lan, fanmi ki deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen plizyè etaj, chak sal klas tounen yon kay. Sèn nan trankil men tansyon, pa gen lapli, sèlman limyè solèy ki bay lonbraj. Tablo sa a montre rezistans, antray, ak reyalite anbarasan lavi nan yon vil kan.",
+            "description": "Devan Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a se yon abri refijye, yon fanm ansent nwa Ayisyèn kouche sou tè konkrè a devan pòtay prensipal la, rad li leve, janm louvri, ap eseye akouche. Yon gason sou bò gòch li (ki mete t‑chèz ak pantalon ble) ak yon fanm sou bò dwat li (ki mete yon rad kolore) ede l respire ak delivre tibebe a san asistans medikal. Lòt moun nwa Ayisyen yo kanpe nan dèyè bò bilding lan, ap gade. Gen gason ki mete chemiz ak pantalon nwa, gen lòt ki mete t‑chèz ak pantalon ble. Fanm yo mete rad nòmal ak koulè diferan. Sou chak galri bilding lan, fanmi deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen non 'Lycee Du Cencenquantenaire' klèman vizib. Sèn nan reyalis, fò anpil emosyon, ak limyè cho ki bay lonbraj. Pa gen lapli, sèlman yon jou solèy.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -114,7 +114,7 @@ def get_translations(lang):
     }
     return texts[lang]
 
-# ---------- CUSTOM CSS ----------
+# ---------- CUSTOM CSS (unchanged) ----------
 st.markdown(
     """
     <style>
@@ -147,15 +147,23 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- DETAILED PROMPT FOR THE NEW PAINTING ----------
+# ---------- VERY DETAILED PROMPT FOR THE NEW PAINTING ----------
 prompt = (
-    "Oil painting, fine art, realistic style. In the background, a large multi‑story concrete school building: Lycee Du Centcinquantenaire (also known as Lycee Des Jeunes Filles). "
-    "The building has several balconies on each floor. On every balcony, displaced families have hung clothes: shirts, t-shirts, pants, dresses, sleeping rugs. "
-    "The building now serves as a refugee shelter for people displaced from Port‑au‑Prince. The ground in front is concrete, no rain, bright sunny day. "
-    "In the foreground, at the main entrance yard, a pregnant woman is lying on the concrete ground, trying to give birth. A man and a woman kneel beside her, "
-    "helping her breathe and assisting the delivery without any medical equipment. Several other people (men, women, children) stand in a circle watching, with expressions of concern and hope. "
-    "The scene is realistic, emotionally powerful, with warm sunlight casting shadows. All human figures have normal proportions, complete arms and hands with five fingers, realistic faces. "
-    "High detail, professional gallery quality, photorealistic."
+    "Oil painting, fine art, realistic style, photorealistic. The scene is set in Port‑au‑Prince, Haiti, on a bright sunny day (no rain). "
+    "In the background stands a large multi‑story concrete school building named 'Lycee Du Cencenquantenaire' (also known as Lycee Des Jeunes Filles). "
+    "The name 'Lycee Du Cencenquantenaire' is clearly written on the building. The building has several balconies on each floor. "
+    "On every balcony, displaced families have hung clothes to dry: shirts, t‑shirts, pants, dresses, and sleeping rugs. "
+    "In the foreground, at the main entrance yard, a pregnant Black Haitian woman lies on the concrete ground. "
+    "She is wearing a dress, her legs are open, her belly is very large, and she is actively trying to give birth. "
+    "Beside her, only two people are helping: a Black Haitian man on her left (wearing a t‑shirt and blue jeans), and a Black Haitian woman on her right (wearing a colorful dress). "
+    "They are kneeling and assisting her to breathe and deliver the baby without any medical equipment. "
+    "No other people are in the immediate foreground. "
+    "In the background (near the building and on the sides), several other Black Haitians are standing and watching. "
+    "Among those background figures, some men wear shirts with black jeans, others wear t‑shirts with blue jeans. "
+    "The women in the background wear normal dresses of various colors. "
+    "All people have realistic skin tones (Black), natural faces, complete arms and hands with five fingers. "
+    "The ground is concrete, warm sunlight casts soft shadows. The mood is tense but hopeful, capturing the harsh reality of life in a displaced camp. "
+    "High detail, professional gallery quality, emotionally powerful."
 )
 
 def generate_painting(prompt):
