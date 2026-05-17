@@ -19,7 +19,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Art Gallery",
             "subtitle": "'Soccer Boys' – Original AI‑assisted painting by Gesner Deslandes",
             "artwork_title": "⚽ “Soccer Boys” – Two Boys Playing with a Sock Ball in Camp City, Under the Rain",
-            "description": "Two bare‑chested Haitian boys, wearing only short pants, kick a ball made of rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. One boy is on the left, the other on the right. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
+            "description": "Two bare‑chested Haitian boys, wearing only short pants, kick a ball made of several rolled‑up black socks in the middle of a muddy camp city. Rain pours down, soaking the ground. They have created their own small soccer field with two makeshift goals – each made from short sticks or scrap wood. The boys' feet splash in puddles as they chase the sock ball, their laughter echoing through the tarps and corrugated metal homes behind them. One boy is on the left, the other on the right. Despite the poverty and the rain, their joy is unstoppable. This painting captures the creativity, resilience, and pure love for soccer that flourishes even in the hardest conditions.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -43,7 +43,7 @@ def get_translations(lang):
             "gallery_title": "Galerie d'art GlobalInternet.py",
             "subtitle": "« Soccer Boys » – Peinture originale assistée par IA par Gesner Deslandes",
             "artwork_title": "⚽ « Soccer Boys » – Deux garçons jouant avec un ballon en chaussettes sous la pluie, camp ville",
-            "description": "Deux garçons torse nu, portant seulement des shorts, frappent un ballon fait de chaussettes noires roulées au milieu d'une ville de campement boueuse. La pluie tombe, trempant le sol. Ils ont créé leur propre petit terrain de football avec deux buts de fortune – fabriqués à partir de courts bâtons ou de bois de récupération. Les pieds des garçons éclaboussent les flaques en poursuivant le ballon‑chaussette, leurs rires résonnant à travers les bâches et les tôles ondulées derrière eux. Un garçon est à gauche, l'autre à droite. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football qui fleurissent même dans les conditions les plus dures.",
+            "description": "Deux garçons torse nu, portant seulement des shorts, frappent un ballon fait de plusieurs chaussettes noires roulées au milieu d'une ville de campement boueuse. La pluie tombe, trempant le sol. Ils ont créé leur propre petit terrain de football avec deux buts de fortune – fabriqués à partir de courts bâtons ou de bois de récupération. Les pieds des garçons éclaboussent les flaques en poursuivant le ballon‑chaussette, leurs rires résonnant à travers les bâches et les tôles ondulées derrière eux. Un garçon est à gauche, l'autre à droite. Malgré la pauvreté et la pluie, leur joie est inarrêtable. Cette peinture capture la créativité, la résilience et l'amour pur du football qui fleurissent même dans les conditions les plus dures.",
             "artist": "Artiste : Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -67,7 +67,7 @@ def get_translations(lang):
             "gallery_title": "Galería de arte GlobalInternet.py",
             "subtitle": "« Soccer Boys » – Pintura original asistida por IA por Gesner Deslandes",
             "artwork_title": "⚽ “Soccer Boys” – Dos niños jugando con un balón de calcetines bajo la lluvia, ciudad de campamento",
-            "description": "Dos niños desnudos de la cintura para arriba, con solo pantalones cortos, patean un balón hecho de calcetines negros enrollados en medio de una ciudad de campamento llena de barro. La lluvia cae, empapando el suelo. Han creado su propio pequeño campo de fútbol con dos porterías improvisadas – hechas de palos cortos o madera reciclada. Los pies de los niños salpican charcos mientras persiguen el balón de calcetín, sus risas resuenan entre las lonas y las chapas de metal corrugado detrás de ellos. Un niño está a la izquierda, el otro a la derecha. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura la creatividad, la resiliencia y el puro amor por el fútbol que florece incluso en las condiciones más difíciles.",
+            "description": "Dos niños desnudos de la cintura para arriba, con solo pantalones cortos, patean un balón hecho de varios calcetines negros enrollados en medio de una ciudad de campamento llena de barro. La lluvia cae, empapando el suelo. Han creado su propio pequeño campo de fútbol con dos porterías improvisadas – hechas de palos cortos o madera reciclada. Los pies de los niños salpican charcos mientras persiguen el balón de calcetín, sus risas resuenan entre las lonas y las chapas de metal corrugado detrás de ellos. Un niño está a la izquierda, el otro a la derecha. A pesar de la pobreza y la lluvia, su alegría es imparable. Esta pintura captura la creatividad, la resiliencia y el puro amor por el fútbol que florece incluso en las condiciones más difíciles.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -91,7 +91,7 @@ def get_translations(lang):
             "gallery_title": "GlobalInternet.py Galeri D'Art",
             "subtitle": "'Soccer Boys' – Tablo orijinal asisté pa IA pa Gesner Deslandes",
             "artwork_title": "⚽ “Soccer Boys” – De ti gason ap jwe foutbòl ak yon boul chosèt anba lapli, nan kan vil",
-            "description": "De ti gason san chemiz, ki mete sèlman bout pantalon, ap choute yon boul fèt ak chosèt nwa woule nan mitan yon vil kan labou. Lapli ap tonbe, tranpe tè a. Yo kreye ti teren foutbòl pa yo ak de biyo pwovizwa – chak fèt ak ti branch bwa oswa bwa resikle. Pye ti gason yo ap vole nan flak dlo pandan y ap kouri dèyè boul chosèt la, ri yo ap fè eko nan twal ak tòl dèyè yo. Yon gason sou bò gòch, lòt la sou bò dwat. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl ki florí menm nan kondisyon ki pi rèd yo.",
+            "description": "De ti gason san chemiz, ki mete sèlman bout pantalon, ap choute yon boul ki fèt ak plizyè chosèt nwa woule nan mitan yon vil kan labou. Lapli ap tonbe, tranpe tè a. Yo kreye ti teren foutbòl pa yo ak de biyo pwovizwa – chak fèt ak ti branch bwa oswa bwa resikle. Pye ti gason yo ap vole nan flak dlo pandan y ap kouri dèyè boul chosèt la, ri yo ap fè eko nan twal ak tòl dèyè yo. Yon gason sou bò gòch, lòt la sou bò dwat. Malgre povrete ak lapli, kè kontan yo pa ka rete. Tablo sa a montre kreyativite, rezistans, ak renmen foutbòl ki florí menm nan kondisyon ki pi rèd yo.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
@@ -114,7 +114,7 @@ def get_translations(lang):
     }
     return texts[lang]
 
-# ---------- CSS (unchanged) ----------
+# ---------- CUSTOM CSS (unchanged) ----------
 st.markdown(
     """
     <style>
@@ -147,15 +147,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- IMPROVED PROMPT FOR TWO BOYS (left and right) ----------
+# ---------- IMPROVED PROMPT FOR TWO BOYS, REALISTIC BODIES, SOCK BALL ----------
 prompt = (
     "Oil painting, fine art, realistic style. Two Haitian boys, age 8-12, bare-chested, wearing only short ripped pants, "
-    "playing soccer in a muddy camp city under heavy rain. One boy is on the left side of the image, the other on the right side. "
-    "Their bodies are complete and well-proportioned: each boy has two arms, two hands with five fingers, two legs, two feet with toes. "
-    "Their faces are clearly visible, natural, with realistic expressions of joy and concentration. No missing limbs, no distorted anatomy, no extra or missing fingers. "
-    "The soccer ball is made of rolled-up black socks, placed between them. Two small makeshift goals made of sticks and scrap wood. "
-    "Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, warm earthy colors, dramatic lighting. "
-    "High detail, professional gallery quality, photorealistic human figures."
+    "playing soccer in a muddy camp city under heavy rain. The scene shows exactly two boys: one on the left side of the image, "
+    "the other on the right side. Their bodies are completely realistic and well-proportioned: each boy has two arms, "
+    "two hands with five fingers, two legs, two feet with toes. Their faces are clearly visible with natural expressions of joy and concentration. "
+    "No missing limbs, no distorted anatomy, no extra or missing fingers. The ball is NOT a standard soccer ball. It is made of several rolled-up black socks tied together, looking like a lumpy sock bundle. "
+    "Two small makeshift goals made of sticks and scrap wood. Behind them: tarps and corrugated metal shacks. Splashing puddles, rain streaks, "
+    "warm earthy colors, dramatic lighting. High detail, professional gallery quality, photorealistic human figures."
 )
 
 def generate_painting(prompt):
