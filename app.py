@@ -17,23 +17,23 @@ def get_translations(lang):
     texts = {
         "en": {
             "gallery_title": "GlobalInternet.py Art Gallery",
-            "subtitle": "'Birth at the Lyceum' – Original painting by Gesner Deslandes",
-            "artwork_title": "👶 “Birth at the Lyceum” – Pregnant Woman Giving Birth at a Refugee School, Port‑au‑Prince",
-            "description": "In front of the Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), a school now serving as a refugee shelter, a pregnant Black Haitian woman lies on the concrete ground at the main entrance. Her dress is pulled up, her legs are bent and naturally open, and her large, round belly is clearly visible. She is in active labor. A man on her left (wearing a t‑shirt and blue jeans) kneels beside her. A woman on her right (wearing a colorful dress) kneels on the ground, holding the pregnant woman's hands, helping her breathe and push. Other Black Haitians stand in the background near the building, watching. Some men wear shirts with black jeans; others wear t‑shirts with blue jeans. Women in the background wear normal dresses of various colors. On every balcony of the building, displaced families have hung clothes, shirts, pants, dresses, and sleeping rugs to dry under the bright sun. The building has the name 'Lycee Du Cencenquantenaire' clearly painted on the top wall. The scene is realistic, emotionally powerful, with warm sunlight casting shadows. No rain, only a sunny day.",
+            "subtitle": "'Mercenaries: The Night of July 7, 2021' – Original painting by Gesner Deslandes",
+            "artwork_title": "🔫 “Mercenaries” – The Night President Jovenel Moïse Was Assassinated",
+            "description": "A group of heavily armed mercenaries stands in the middle of the night, their pickup trucks' headlights cutting through the darkness. Each man carries a rifle. This scene is a remembrance of the tragic night of July 7, 2021, when President Jovenel Moïse was assassinated in his home. If we believe in the US justice system, justice was served, but the Haitian population is still paying the price of that night in 2026. This painting is a memorial, a cry for accountability, and a reminder that the truth has never been fully told.",
             "artist": "Artist: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
             "email": "✉️ deslandes78@gmail.com",
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
-            "regenerate_btn": "🎨 Regenerate Painting (new version)",
+            "regenerate_btn": "🔄 Reload Image",
             "print_btn": "🖨️ Print this artwork for exhibition",
             "download_btn": "💾 Download this painting (PNG)",
-            "footer": "© 2026 GlobalInternet.py – AI‑enhanced digital art exhibition software",
+            "footer": "© 2026 GlobalInternet.py – Digital art exhibition software",
             "loading": "🎨 Loading your painting...",
             "error": "Failed to load painting. Please check your internet connection and try again.",
             "sidebar_title": "🌐 Language",
             "sidebar_instruction": "Select your language",
-            "img_caption": "'Birth at the Lyceum' – Original Painting",
+            "img_caption": "'Mercenaries – The Night of July 7, 2021' – Original Painting",
             "history_title": "📚 Painting History",
             "download_history_btn": "💾 Download",
             "clear_history_btn": "🗑️ Clear history",
@@ -41,23 +41,23 @@ def get_translations(lang):
         },
         "fr": {
             "gallery_title": "Galerie d'art GlobalInternet.py",
-            "subtitle": "« Naissance au Lycée » – Peinture originale par Gesner Deslandes",
-            "artwork_title": "👶 « Naissance au Lycée » – Femme enceinte accouchant dans une école de réfugiés, Port‑au‑Prince",
-            "description": "Devant le Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), une école devenue refuge, une femme enceinte noire haïtienne est allongée sur le sol en béton à l'entrée principale. Sa robe est relevée, ses jambes sont pliées et naturellement écartées, et son gros ventre rond est clairement visible. Elle est en plein travail. Un homme à sa gauche (portant un t‑shirt et un jean bleu) s'agenouille à côté d'elle. Une femme à sa droite (portant une robe colorée) s'agenouille sur le sol, tenant les mains de la femme enceinte, l'aidant à respirer et à pousser. D'autres Haïtiens noirs se tiennent en arrière-plan près du bâtiment, regardant. Certains hommes portent des chemises avec jeans noirs, d'autres des t‑shirts avec jeans bleus. Les femmes en arrière-plan portent des robes normales de différentes couleurs. À chaque balcon du bâtiment, des familles déplacées ont suspendu vêtements, chemises, pantalons, robes et tapis de sol pour les faire sécher au soleil. Le bâtiment porte le nom 'Lycee Du Cencenquantenaire' clairement peint sur le mur du haut. La scène est réaliste, puissante, avec une lumière chaude projetant des ombres. Pas de pluie, seulement un jour ensoleillé.",
+            "subtitle": "« Mercenaires : La Nuit du 7 Juillet 2021 » – Peinture originale par Gesner Deslandes",
+            "artwork_title": "🔫 « Mercenaires » – La nuit de l'assassinat du président Jovenel Moïse",
+            "description": "Un groupe de mercenaires lourdement armés se tient au milieu de la nuit, les phares de leurs pick‑ups perçant l'obscurité. Chaque homme porte un fusil. Cette scène est un souvenir de la nuit tragique du 7 juillet 2021, lorsque le président Jovenel Moïse a été assassiné chez lui. Si nous croyons au système judiciaire américain, la justice a été rendue, mais la population haïtienne paie encore le prix de cette nuit en 2026. Cette peinture est un mémorial, un cri pour la responsabilité et un rappel que la vérité n'a jamais été entièrement révélée.",
             "artist": "Artiste : Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
             "email": "✉️ deslandes78@gmail.com",
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
-            "regenerate_btn": "🎨 Regénérer la peinture (nouvelle version)",
+            "regenerate_btn": "🔄 Recharger l'image",
             "print_btn": "🖨️ Imprimer cette œuvre pour exposition",
             "download_btn": "💾 Télécharger cette peinture (PNG)",
-            "footer": "© 2026 GlobalInternet.py – Logiciel d'exposition d'art numérique assisté par IA",
+            "footer": "© 2026 GlobalInternet.py – Logiciel d'exposition d'art numérique",
             "loading": "🎨 Chargement de votre peinture...",
             "error": "Échec du chargement. Vérifiez votre connexion internet.",
             "sidebar_title": "🌐 Langue",
             "sidebar_instruction": "Choisissez votre langue",
-            "img_caption": "« Naissance au Lycée » – Peinture originale",
+            "img_caption": "« Mercenaires – La Nuit du 7 Juillet 2021 » – Peinture originale",
             "history_title": "📚 Historique des peintures",
             "download_history_btn": "💾 Télécharger",
             "clear_history_btn": "🗑️ Effacer l'historique",
@@ -65,23 +65,23 @@ def get_translations(lang):
         },
         "es": {
             "gallery_title": "Galería de arte GlobalInternet.py",
-            "subtitle": "« Nacimiento en el Liceo » – Pintura original por Gesner Deslandes",
-            "artwork_title": "👶 “Nacimiento en el Liceo” – Mujer embarazada dando a luz en una escuela de refugiados, Puerto Príncipe",
-            "description": "Frente al Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), una escuela que ahora sirve como refugio, una mujer embarazada negra haitiana yace en el suelo de cemento en la entrada principal. Su vestido está levantado, sus piernas están dobladas y naturalmente abiertas, y su gran vientre redondo es claramente visible. Está en trabajo de parto activo. Un hombre a su izquierda (con camiseta y jeans azules) se arrodilla a su lado. Una mujer a su derecha (con vestido colorido) se arrodilla en el suelo, tomando las manos de la mujer embarazada, ayudándola a respirar y pujar. Otros haitianos negros están en el fondo cerca del edificio, observando. Algunos hombres usan camisas con jeans negros; otros usan camisetas con jeans azules. Las mujeres en el fondo usan vestidos normales de varios colores. En cada balcón del edificio, familias desplazadas han colgado ropa, camisas, pantalones, vestidos y alfombras para secar bajo el sol. El edificio tiene el nombre 'Lycee Du Cencenquantenaire' claramente pintado en la pared superior. La escena es realista, emocionalmente poderosa, con luz cálida que proyecta sombras. Sin lluvia, solo un día soleado.",
+            "subtitle": "« Mercenarios: La Noche del 7 de Julio de 2021 » – Pintura original por Gesner Deslandes",
+            "artwork_title": "🔫 “Mercenarios” – La noche del asesinato del presidente Jovenel Moïse",
+            "description": "Un grupo de mercenarios fuertemente armados está en medio de la noche, los faros de sus camionetas cortan la oscuridad. Cada hombre lleva un rifle. Esta escena es un recuerdo de la trágica noche del 7 de julio de 2021, cuando el presidente Jovenel Moïse fue asesinado en su casa. Si creemos en el sistema judicial estadounidense, se hizo justicia, pero la población haitiana todavía está pagando el precio de esa noche en 2026. Esta pintura es un memorial, un grito de rendición de cuentas y un recordatorio de que la verdad nunca se ha contado por completo.",
             "artist": "Artista: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
             "email": "✉️ deslandes78@gmail.com",
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
-            "regenerate_btn": "🎨 Regenerar pintura (nueva versión)",
+            "regenerate_btn": "🔄 Recargar imagen",
             "print_btn": "🖨️ Imprimir esta obra para exposición",
             "download_btn": "💾 Descargar esta pintura (PNG)",
-            "footer": "© 2026 GlobalInternet.py – Software de exhibición de arte digital mejorado con IA",
+            "footer": "© 2026 GlobalInternet.py – Software de exhibición de arte digital",
             "loading": "🎨 Cargando su pintura...",
             "error": "Error al cargar. Verifique su conexión a internet.",
             "sidebar_title": "🌐 Idioma",
             "sidebar_instruction": "Seleccione su idioma",
-            "img_caption": "« Nacimiento en el Liceo » – Pintura original",
+            "img_caption": "« Mercenarios – La Noche del 7 de Julio de 2021 » – Pintura original",
             "history_title": "📚 Historial de pinturas",
             "download_history_btn": "💾 Descargar",
             "clear_history_btn": "🗑️ Borrar historial",
@@ -89,23 +89,23 @@ def get_translations(lang):
         },
         "ht": {
             "gallery_title": "GlobalInternet.py Galeri D'Art",
-            "subtitle": "'Nesans nan Lise a' – Tablo orijinal pa Gesner Deslandes",
-            "artwork_title": "👶 “Nesans nan Lise a” – Fanm ansent ap akouche devan yon lekòl refijye, Pòtoprens",
-            "description": "Devan Lycee Du Cencenquantenaire (Lycee Des Jeunes Filles), yon lekòl kounye a se yon abri refijye, yon fanm ansent nwa Ayisyèn kouche sou tè konkrè a devan pòtay prensipal la. Rad li leve, janm li pliye ak natirèlman louvri, ak gwo vant wonn li byen vizib. Li nan travay akouchman. Yon gason sou bò gòch li (ki mete t‑chèz ak pantalon ble) jenou atè bò kote l. Yon fanm sou bò dwat li (ki mete yon rad kolore) jenou atè sou tè a, kenbe men fanm ansent la, ede l respire ak pouse. Lòt moun nwa Ayisyen yo kanpe nan dèyè bò bilding lan, ap gade. Gen gason ki mete chemiz ak pantalon nwa, gen lòt ki mete t‑chèz ak pantalon ble. Fanm nan dèyè yo mete rad nòmal ak koulè diferan. Sou chak galri bilding lan, fanmi deplase yo pandye rad, chemiz, pantalon, wòb, ak tapi pou seche anba solèy la. Bilding lan gen non 'Lycee Du Cencenquantenaire' pentire klèman sou miray anlè a. Sèn nan reyalis, fò anpil emosyon, ak limyè cho ki bay lonbraj. Pa gen lapli, sèlman yon jou solèy.",
+            "subtitle": "'Mèsenè: Lannwit 7 Jiyè 2021' – Tablo orijinal pa Gesner Deslandes",
+            "artwork_title": "🔫 “Mèsenè” – Lannwit asasina Prezidan Jovenel Moïse",
+            "description": "Yon gwoup mèsenè byen ame kanpe nan mitan lannwit, limyè machin yo klere fènwa a. Chak gason gen yon fizi nan men yo. Sèn sa a se yon chonjaj lannwit trajik 7 jiyè 2021, lè yo te asasine Prezidan Jovenel Moïse lakay li. Si nou kwè nan sistèm jistis ameriken an, jistis te rive, men popilasyon ayisyen an ap toujou peye pri lannwit sa a an 2026. Tablo sa a se yon memoryal, yon rèl pou responsabilite, ak yon rapèl ke verite a pa janm te rakonte nèt ale.",
             "artist": "Atis: Gesner Deslandes",
             "company": "GlobalInternet.py",
             "phone": "📞 +509 4738-5663",
             "email": "✉️ deslandes78@gmail.com",
             "website": "🌐 https://globalinternetsitepy-abh7v6tnmskxxnuplrdcgk.streamlit.app/",
-            "regenerate_btn": "🎨 Rekree tablo a (nouvo vèsyon)",
+            "regenerate_btn": "🔄 Rechaje imaj la",
             "print_btn": "🖨️ Enprime travay sa a pou egzibisyon",
             "download_btn": "💾 Telechaje tablo sa a (PNG)",
-            "footer": "© 2026 GlobalInternet.py – Lojisyèl egzibisyon atis dijital avèk IA",
+            "footer": "© 2026 GlobalInternet.py – Lojisyèl egzibisyon atis dijital",
             "loading": "🎨 Ap chaje tablo a...",
             "error": "Pa t kapab chaje tablo a. Tcheke koneksyon entènèt ou.",
             "sidebar_title": "🌐 Lang",
             "sidebar_instruction": "Chwazi lang ou",
-            "img_caption": "'Nesans nan Lise a' – Tablo Orijinal",
+            "img_caption": "'Mèsenè – Lannwit 7 Jiyè 2021' – Tablo Orijinal",
             "history_title": "📚 Istorik tablo yo",
             "download_history_btn": "💾 Telechaje",
             "clear_history_btn": "🗑️ Efase istorik",
@@ -146,8 +146,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- FIXED IMAGE URL (RAW GITHUB) ----------
-image_url = "https://raw.githubusercontent.com/Deslandes1/Painting-1-by-Gesner-Deslandes/main/Gemini_Generated_Image_fwpr4ofwpr4ofwpr.png"
+# ---------- IMAGE URL (REPLACE WITH YOUR RAW GITHUB LINK) ----------
+# !!! IMPORTANT !!!
+# Replace the URL below with the direct raw link to your mercenary painting.
+# Example: https://raw.githubusercontent.com/YourUserName/YourRepo/main/mercenaries.png
+image_url = "YOUR_RAW_IMAGE_URL_HERE"
 
 def load_image_from_url(url):
     try:
@@ -196,7 +199,7 @@ else:
         st.sidebar.download_button(
             label=f"{t['download_history_btn']} #{len(st.session_state.painting_history)-idx}",
             data=img_bytes,
-            file_name=f"birth_lyceum_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{idx}.png",
+            file_name=f"mercenaries_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{idx}.png",
             mime="image/png",
             key=f"hist_dl_{idx}"
         )
@@ -214,12 +217,12 @@ with col2:
         st.image(st.session_state.painting_img, use_container_width=True, caption=t['img_caption'])
     else:
         st.error(t['error'])
+        st.info("Make sure you have replaced `image_url` with a valid raw image link from GitHub.")
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
     col_btn1, col_btn2 = st.columns(2)
     with col_btn1:
-        # "Regenerate" now just reloads the same image (or you could re-fetch)
         if st.button(t['regenerate_btn'], use_container_width=True, key="regenerate"):
             if st.session_state.painting_img is not None:
                 st.session_state.painting_history.append(st.session_state.painting_img.copy())
@@ -232,7 +235,7 @@ with col2:
             st.download_button(
                 label=t['download_btn'],
                 data=img_bytes,
-                file_name=f"birth_lyceum_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
+                file_name=f"mercenaries_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
                 mime="image/png",
                 use_container_width=True,
                 key="download_current"
